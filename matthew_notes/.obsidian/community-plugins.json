@@ -5,5 +5,6 @@
   "cm-editor-syntax-highlight-obsidian",
   "obsidian-outliner",
   "periodic-notes",
-  "templater-obsidian"
+  "templater-obsidian",
+  "obsidian-git"
 ]
