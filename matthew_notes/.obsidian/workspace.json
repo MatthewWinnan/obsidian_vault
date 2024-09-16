@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mechanical Keyboard Project/General Links.md",
+                "file": "Home Lab Setup/NixOS/Basic Notes.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Mechanical Keyboard Project/General Links.md",
+                "file": "Home Lab Setup/NixOS/Basic Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Mechanical Keyboard Project/General Links.md",
+                "file": "Home Lab Setup/NixOS/Basic Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Mechanical Keyboard Project/General Links.md"
+                "file": "Home Lab Setup/NixOS/Basic Notes.md"
               }
             }
           },
@@ -157,8 +157,11 @@
   },
   "active": "1ca25d836bb061b6",
   "lastOpenFiles": [
-    "Mechanical Keyboard Project/Initial 3D Print Ideas.md",
+    "Home Lab Setup/NixOS/TODO Fix.md",
+    "Home Lab Setup/NixOS/Basic Notes.md",
     "Mechanical Keyboard Project/General Links.md",
+    "Home Lab Setup/NixOS",
+    "Mechanical Keyboard Project/Initial 3D Print Ideas.md",
     "PC Building/CPU/General CPU.md",
     "Mechanical Keyboard Project",
     "PC Building/CPU/RiscV Improvements.md",

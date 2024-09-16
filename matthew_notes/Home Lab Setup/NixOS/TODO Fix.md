@@ -1,0 +1,2 @@
+- Od1n is saving the screen shots in both $HOME/ and $HOME/Pictures/ check why.... like that's the point of nix it works on th0r why not od1n
+- th0r's lock screen turns red, suspect due to the KVM? Weird od1n doesn't happen with so not my config so drivers or gpu? od1n has integrated and dedicated??? 
