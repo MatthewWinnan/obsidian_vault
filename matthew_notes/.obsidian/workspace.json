@@ -15,11 +15,24 @@
               "state": {
                 "file": "Home Lab Setup/NixOS/Basic Notes.md",
                 "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "a560e94845eec3b7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Home Lab Setup/NixOS/Basic Notes.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Home Lab Setup/NixOS/Basic Notes.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Home Lab Setup/NixOS/Basic Notes.md"
+                "file": "index.md"
               }
             }
           },
@@ -138,7 +151,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -155,31 +168,31 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "1ca25d836bb061b6",
+  "active": "a560e94845eec3b7",
   "lastOpenFiles": [
-    "Home Lab Setup/NixOS/TODO Fix.md",
-    "Home Lab Setup/NixOS/Basic Notes.md",
-    "Mechanical Keyboard Project/General Links.md",
-    "Home Lab Setup/NixOS",
-    "Mechanical Keyboard Project/Initial 3D Print Ideas.md",
-    "PC Building/CPU/General CPU.md",
-    "Mechanical Keyboard Project",
-    "PC Building/CPU/RiscV Improvements.md",
-    "PC Building/CPU/ARM Improvements.md",
-    "PC Building/CPU",
-    "PC Building/Motherboard.md",
+    "templates/The first tool.md",
     "PC Building/PC Building Intro.md",
-    "Home Lab Setup/Router Setup/VyOS Setup.md",
-    "PC Building",
-    "Home Lab Setup/Router Setup/RFC Archive.md",
+    "PC Building/Motherboard.md",
+    "PC Building/CPU/RiscV Improvements.md",
+    "PC Building/CPU/General CPU.md",
+    "PC Building/CPU/ARM Improvements.md",
+    "Mechanical Keyboard Project/Initial 3D Print Ideas.md",
+    "Mechanical Keyboard Project/General Links.md",
     "Home Lab Setup/Router Setup/Configuring PPPoE.md",
+    "Home Lab Setup/Router Setup/RFC Archive.md",
+    "Home Lab Setup/Router Setup/VyOS Setup.md",
     "Home Lab Setup/Router Setup/Configuring NAT.md",
+    "Home Lab Setup/NixOS/Basic Notes.md",
+    "Home Lab Setup/NixOS/TODO Fix.md",
+    "Home Lab Setup/NixOS",
+    "Mechanical Keyboard Project",
+    "PC Building/CPU",
+    "PC Building",
     "index.md",
     "Home Lab Setup/Remote Access/Tailscale.md",
     "Home Lab Setup/Remote Access/General Remote Access.md",
     "Home Lab Setup/Remote Access",
     "Home Lab Setup/Proxmox Setup/General Proxmox Notes.md",
-    "templates/The first tool.md",
     "images/pppoe_discovery.png",
     "Home Lab Setup/Proxmox Setup",
     "Home Lab Setup/Router Setup",
