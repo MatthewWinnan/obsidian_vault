@@ -6,7 +6,7 @@
 4. PADS (PPP Active Discovery Session-confirmation): The server responds to PADR with a PADS packet, confirming the session and providing a session ID. 
 5. Session Stage: After the exchange of PAD packets and session establishment, PPP session data is exchanged within PPPoE frames.
 
-![Visual Illustration Of Discovery Process](images/pppoe_discovery.png)
+![Visual Illustration Of Discovery Process](pppoe_discovery.png)
 
 In essence the router will be the PPPoE client and will need to establish a connection with the PPPoE server which is hosted by the ISP.
 

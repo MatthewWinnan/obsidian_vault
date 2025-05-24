@@ -25,16 +25,46 @@
             "id": "327634b5b7a19c05",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.7.4"
+                "file": "matthew_notes/Mechanical Keyboard Project/Kyria rev 3/Introduction.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "Release Notes 1.7.4"
+              "title": "Introduction"
+            }
+          },
+          {
+            "id": "3efbb46859ff603e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "matthew_notes/Interesting Finds/Introduction.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Introduction"
+            }
+          },
+          {
+            "id": "95be9c0d5e7a431a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "matthew_notes/Interesting Finds/Introduction.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Introduction"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -53,7 +83,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -106,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "matthew_notes/index.md",
+                "file": "matthew_notes/Interesting Finds/Introduction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +147,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for index"
+              "title": "Backlinks for Introduction"
             }
           },
           {
@@ -125,12 +156,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "matthew_notes/index.md",
+                "file": "matthew_notes/Interesting Finds/Introduction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from index"
+              "title": "Outgoing links from Introduction"
             }
           },
           {
@@ -152,10 +183,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "matthew_notes/index.md"
+                "file": "matthew_notes/Interesting Finds/Introduction.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of index"
+              "title": "Outline of Introduction"
             }
           }
         ]
@@ -175,6 +206,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "327634b5b7a19c05",
-  "lastOpenFiles": []
+  "active": "95be9c0d5e7a431a",
+  "lastOpenFiles": [
+    "matthew_notes/TODO.md",
+    "matthew_notes/index.md",
+    "matthew_notes/files/images/pppoe_discovery.png",
+    "matthew_notes/files",
+    "matthew_notes/Mechanical Keyboard Project/Initial 3D Print Ideas.md",
+    "matthew_notes/Mechanical Keyboard Project/General Links.md",
+    "matthew_notes/Mechanical Keyboard Project/Kyria rev 3/Introduction.md",
+    "matthew_notes/templates/The first tool.md",
+    "matthew_notes/Interesting Finds/Introduction.md",
+    "matthew_notes/Interesting Finds",
+    "matthew_notes/Mechanical Keyboard Project/Kyria rev 3"
+  ]
 }
