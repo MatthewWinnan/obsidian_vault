@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "matthew_notes/Interesting Finds/Introduction.md",
+                "file": "matthew_notes/TODO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Introduction"
+              "title": "TODO"
             }
           }
         ],
@@ -208,6 +208,7 @@
   },
   "active": "95be9c0d5e7a431a",
   "lastOpenFiles": [
+    "matthew_notes/Interesting Finds/Introduction.md",
     "matthew_notes/TODO.md",
     "matthew_notes/index.md",
     "matthew_notes/files/images/pppoe_discovery.png",
@@ -216,7 +217,6 @@
     "matthew_notes/Mechanical Keyboard Project/General Links.md",
     "matthew_notes/Mechanical Keyboard Project/Kyria rev 3/Introduction.md",
     "matthew_notes/templates/The first tool.md",
-    "matthew_notes/Interesting Finds/Introduction.md",
     "matthew_notes/Interesting Finds",
     "matthew_notes/Mechanical Keyboard Project/Kyria rev 3"
   ]
