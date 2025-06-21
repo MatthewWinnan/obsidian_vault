@@ -38,7 +38,9 @@ What follows is a general overview of potential future projects I want to do, or
 			- [x] Using [Lobster](https://github.com/justchokingaround/lobster?tab=readme-ov-file#nixos-flake) ✅ 2025-05-25
 		- [x] Movies ✅ 2025-05-25
 			- [x] Using [Lobster](https://github.com/justchokingaround/lobster?tab=readme-ov-file#nixos-flake) ✅ 2025-05-25
-- [ ] I saw a new project [RMPC](https://github.com/mierak/rmpc)
+- [x] I saw a new project [RMPC](https://github.com/mierak/rmpc) ✅ 2025-06-01
+	- [ ] I need to customize it and figure out how to organize music.
+	- [ ] Get a nice music downloader, currently downloading from youtube with yt-dlp
 - [ ] I still need to finally port my main 25.05 config to the work laptop.
 - [ ] Get a nice workflow for RUST based development, I suppose just using cargo is enough and having that on system? I won't be installing just running. I suppose the question is does it just need to get the compiler's PATH or is there a runtime of sorts?
 - [ ] I want to get the big RTX3070 to work on NixOS so I can fully integrate into the Linux community.
@@ -51,7 +53,7 @@ What follows is a general overview of potential future projects I want to do, or
 	- [ ] I want to see what else I can customize.
 		- [ ] Transparent tabs.
 		- [ ] Filemanager color and picker.
-	- [ ] I still need to make it my default browser
+	- [x] I still need to make it my default browser ✅ 2025-06-07
 - [ ] Make orcaslicer more reproducible? 
 	- [ ] Build from source
 	- [ ] Symlink configs and keep configs in git repo?
@@ -60,11 +62,25 @@ What follows is a general overview of potential future projects I want to do, or
 	- [ ] Clipboard.
 	- [ ] A lot of processes I have hyprland start and detach from could probably made services or one shot systemd tasks.
 - [ ] Hyprland fixes so most things works well enough with xwayland and so forth.
+- [ ] I want to change some waybar things, make it sharper cleaner maybe transparent. 
+	- [ ] Look at some examples.
+	- [ ] Same for hyprland windows?
+- [ ] Learn specializations.
+- [ ] Learn overlays and overrides more, have an idea but in context of NixOS not sure.
+	- [ ] Also is it opt in or can any attribute set take an overlay to change the contents?
+	- [ ] Maybe pills helps.e
 
 ## Home Lab
 
 - [ ] Revive my own [SearchXNG](https://github.com/searxng/searxng).
 - [ ] Add local nix-caching using [attic](https://github.com/zhaofengli/attic).
+	- [x] Want to make the delta my server. ✅ 2025-06-08
+		- [ ] Ended up using proxmox on my H3+
+	- [x] Need to change it to be headless. ✅ 2025-06-08
+	- [x] Add headless options into my config? ✅ 2025-06-08
+	- [x] Need to also split things I import between headless and so forth. ✅ 2025-06-08
+	- [ ] Get a atticd service going, solved this for work read and base off of write up there
+- [ ] Add a wallpaper repository on github and import it as a flakes input.
 - [ ] Start a media centre
 	- [ ] [Plex Server](https://www.plex.tv/)
 		- [ ] Integrate mov-cli with it mayhaps -> [mov-cli-jellyplex](https://github.com/mov-cli/mov-cli-jellyplex)
@@ -83,5 +99,12 @@ What follows is a general overview of potential future projects I want to do, or
 - [ ] Get a local dashboard going for basic navigation
 	- [ ] Maybe also SNMP up down monitoring?
 - [ ] Get a local nightly mirror of Nixpkgs going? 
+
+## Treasure Trove
+
+The following tools look good and I want to read more on how to integrate them to my workflow.
+
+- [atuin](https://atuin.sh/)
+	- Nix Options -> https://mynixos.com/search?q=atuin   
 
 
