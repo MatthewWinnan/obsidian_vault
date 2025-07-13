@@ -3,6 +3,7 @@ What follows is a general overview of potential future projects I want to do, or
 
 - [ ] Learn RUST from the [RUST Book](https://doc.rust-lang.org/book/)
 	- [ ] Currently at [7.4](https://doc.rust-lang.org/book/ch07-04-bringing-paths-into-scope-with-the-use-keyword.html)
+	- [ ] Maybe write the keyboard project in embedded RUST as a challenge.
 - [ ] Learn Zig [Zig-Learn](https://ziglang.org/learn/)
 - [ ] I ideally want to become more familiar with Nix, like I can comfortably perform known tasks, I can't however solve novel problems. 
 	- [ ] Starting might be [Nix-Pills](https://nixos.org/guides/nix-pills/)
@@ -10,16 +11,20 @@ What follows is a general overview of potential future projects I want to do, or
 ## Mech Keeb And ZMK
 
 - [ ] I still need to get keymap viewer working for the  TIE-TEM.
-- [ ] Finish flashing my newest keymap and test it, for both the kyria and TIE-TEM.
+- [x] Finish flashing my newest keymap and test it, for both the kyria and TIE-TEM. ✅ 2025-07-13
 - [ ] I do not like my Kyria_View naming convention, this only implies one board, rather use my name to imply it is my fork.
 - [ ] Finish my TIE-TEM write up and add images and files on how it was made printed etc. Also need to give the appropriate credits.
-- [ ] Currently my TIE-TEM was incorrectly assembled, I would love to just have a per config overlay of sorts to remap the row definition only for left side, so the main TIE-TEM module I am pulling in can be left with the correct mapping.
+- [x] Currently my TIE-TEM was incorrectly assembled, I would love to just have a per config overlay of sorts to remap the row definition only for left side, so the main TIE-TEM module I am pulling in can be left with the correct mapping. ✅ 2025-07-13
+	- [x] This is apparently not possible since I can not configure flags for the compiler since the build system is the one loading it in for the compiler. ✅ 2025-07-13
+	- [x] Can always edit per build but that is messy. ✅ 2025-07-13
 - [ ] Learn more about Zephyr, for example I have an I2C rotary encoder which would be nice to integrate so I do not need extra pins (would allow for things like TIE-TEM to have encoders)
 	- [ ] First learn how the rotary encoder currently functions.
 	- [ ] Learn how device tree files are structured so I can make my own.
 	- [ ] How I should expose the module so it can be imported and configured.
 - [ ] Finish up my RGB project, or check how far the current implementation is, it was some series of PR's which implemented it for the glove and generalized it for ZMK.
 - [ ] Plan my next board?
+	- [ ] I am thinking a dactyl so maybe like a scyla or something.
+- [ ] Maybe go with a bluetooth dongle next?
 
 ## 3D Printer
 
@@ -42,11 +47,11 @@ What follows is a general overview of potential future projects I want to do, or
 	- [ ] I need to customize it and figure out how to organize music.
 	- [ ] Get a nice music downloader, currently downloading from youtube with yt-dlp
 - [ ] I still need to finally port my main 25.05 config to the work laptop.
-- [ ] Get a nice workflow for RUST based development, I suppose just using cargo is enough and having that on system? I won't be installing just running. I suppose the question is does it just need to get the compiler's PATH or is there a runtime of sorts?
-- [ ] I want to get the big RTX3070 to work on NixOS so I can fully integrate into the Linux community.
+- [x] Get a nice workflow for RUST based development, I suppose just using cargo is enough and having that on system? I won't be installing just running. I suppose the question is does it just need to get the compiler's PATH or is there a runtime of sorts? ✅ 2025-07-13
+- [x] I want to get the big RTX3070 to work on NixOS so I can fully integrate into the Linux community. ✅ 2025-07-13
 - [ ] Look at alternative LSP for Nix?
 	- [ ] There was a good talk about analysis for the language, however in terms of LSP you'll always be limited it seems.
-- [ ] I have noticed waypaper using hyprpaper backend does not always launch the restore function, try to fix.
+- [x] I have noticed waypaper using hyprpaper backend does not always launch the restore function, try to fix. ✅ 2025-07-13
 - [x] Look at instead using librewolf, instead of Schizofox as default browser. ✅ 2025-05-25
 	- [x] Maybe even rather qutebrowser ✅ 2025-05-25
 	- [x] Or maybe even nyxt ✅ 2025-05-31
@@ -58,13 +63,13 @@ What follows is a general overview of potential future projects I want to do, or
 	- [ ] Build from source
 	- [ ] Symlink configs and keep configs in git repo?
 - [ ] Add some applications as systemd services
-	- [ ] Waybar.
+	- [x] Waybar. ✅ 2025-07-13
 	- [ ] Clipboard.
-	- [ ] A lot of processes I have hyprland start and detach from could probably made services or one shot systemd tasks.
+	- [x] A lot of processes I have hyprland start and detach from could probably made services or one shot systemd tasks. ✅ 2025-07-13
 - [ ] Hyprland fixes so most things works well enough with xwayland and so forth.
-- [ ] I want to change some waybar things, make it sharper cleaner maybe transparent. 
-	- [ ] Look at some examples.
-	- [ ] Same for hyprland windows?
+- [x] I want to change some waybar things, make it sharper cleaner maybe transparent. ✅ 2025-07-13
+	- [x] Look at some examples. ✅ 2025-07-13
+	- [x] Same for hyprland windows? ✅ 2025-07-13
 - [ ] Learn specializations.
 - [ ] Learn overlays and overrides more, have an idea but in context of NixOS not sure.
 	- [ ] Also is it opt in or can any attribute set take an overlay to change the contents?
