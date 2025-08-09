@@ -21,6 +21,8 @@ What follows is a general overview of potential future projects I want to do, or
 	- [ ] First learn how the rotary encoder currently functions.
 	- [ ] Learn how device tree files are structured so I can make my own.
 	- [ ] How I should expose the module so it can be imported and configured.
+	- [ ] How should I expose and hookup an i2c device to ZMK, I can look at some examples like the nice nano or spi/i2c pointing devices.
+	- [ ] One grand idea would be to make use of my original idea of having a rotary encoder touch display. Can make a module that allows for pointer actions and for rotary encoder. Display will be handled separately on the ESP32's own flash/processor. 
 - [ ] Finish up my RGB project, or check how far the current implementation is, it was some series of PR's which implemented it for the glove and generalized it for ZMK.
 - [ ] Plan my next board?
 	- [ ] I am thinking a dactyl so maybe like a scyla or something.
@@ -62,6 +64,11 @@ What follows is a general overview of potential future projects I want to do, or
 - [ ] Make orcaslicer more reproducible? 
 	- [ ] Build from source
 	- [ ] Symlink configs and keep configs in git repo?
+	- [ ] Does not work on h31mda11, there is a bunch of reasons the main reason being nvidia driver related, I do set things differently between ba1dur and h31mda11.
+		- [ ] The same happens for kicad....
+		- [ ] https://github.com/SoftFever/OrcaSlicer/issues/9244 
+		- [ ] https://github.com/SoftFever/OrcaSlicer/issues/8361
+- [ ] Wanted to rice Discord and get my streaming quality better and up and ready.
 - [ ] Add some applications as systemd services
 	- [x] Waybar. ✅ 2025-07-13
 	- [ ] Clipboard.
@@ -74,6 +81,9 @@ What follows is a general overview of potential future projects I want to do, or
 - [ ] Learn overlays and overrides more, have an idea but in context of NixOS not sure.
 	- [ ] Also is it opt in or can any attribute set take an overlay to change the contents?
 	- [ ] Maybe pills helps.e
+- [ ] Customize yazi with some plugins. 
+- [ ] Customize tmux with some plugins, maybe move rather to just tmux instead of zellij. 
+- [ ] Zellij I do have the problem where a session on a remote being accessed through ssh is closed when the ssh is dropped, defeats the use case for me. I have seen some other solutions (hacky albeit) to not use tmux or zellij and some single use tools with the terminal of choice's built in window management.
 
 ## Home Lab
 
@@ -104,6 +114,10 @@ What follows is a general overview of potential future projects I want to do, or
 - [ ] Get a local dashboard going for basic navigation
 	- [ ] Maybe also SNMP up down monitoring?
 - [ ] Get a local nightly mirror of Nixpkgs going? 
+- [ ] I am playing with the idea of using vyos to configure my own router. To that end it would be nice to use my current router as a backup and be able to switch to the one I am working on.
+	- [ ] Find out how to employ this redundency, selection switch going to fibre box and selection switch from routers to main network.
+	- [ ] Can I have two systems registered to pppoe, or whatever mechanism the ISP uses to verify the device at the place I end up staying. 
+	- [ ] I also need to work in access points, what is a nice way. The default router has one, however my own won't (unless I add a dongle). Would it work to just have the AP connect to the second layer, ie my internal network switch? This should give it a path to the default gateway and allow other devices to use it? 
 
 ## Treasure Trove
 
