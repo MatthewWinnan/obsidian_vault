@@ -62,12 +62,14 @@ What follows is a general overview of potential future projects I want to do, or
 		- [ ] Filemanager color and picker.
 	- [x] I still need to make it my default browser ✅ 2025-06-07
 - [ ] Make orcaslicer more reproducible? 
-	- [ ] Build from source
+	- [x] Build from source ✅ 2025-08-22
+		- [x] Takes way too long... ✅ 2025-08-22
 	- [ ] Symlink configs and keep configs in git repo?
-	- [ ] Does not work on h31mda11, there is a bunch of reasons the main reason being nvidia driver related, I do set things differently between ba1dur and h31mda11.
-		- [ ] The same happens for kicad....
-		- [ ] https://github.com/SoftFever/OrcaSlicer/issues/9244 
-		- [ ] https://github.com/SoftFever/OrcaSlicer/issues/8361
+	- [ ] Migrate my old files to h31mda11
+	- [x] Does not work on h31mda11, there is a bunch of reasons the main reason being nvidia driver related, I do set things differently between ba1dur and h31mda11. ✅ 2025-08-22
+		- [x] The same happens for kicad.... ✅ 2025-08-22
+		- [x] https://github.com/SoftFever/OrcaSlicer/issues/9244 ✅ 2025-08-22
+		- [x] https://github.com/SoftFever/OrcaSlicer/issues/8361 ✅ 2025-08-22
 - [ ] Wanted to rice Discord and get my streaming quality better and up and ready.
 - [ ] Add some applications as systemd services
 	- [x] Waybar. ✅ 2025-07-13
@@ -84,6 +86,7 @@ What follows is a general overview of potential future projects I want to do, or
 - [ ] Customize yazi with some plugins. 
 - [ ] Customize tmux with some plugins, maybe move rather to just tmux instead of zellij. 
 - [ ] Zellij I do have the problem where a session on a remote being accessed through ssh is closed when the ssh is dropped, defeats the use case for me. I have seen some other solutions (hacky albeit) to not use tmux or zellij and some single use tools with the terminal of choice's built in window management.
+- [ ] I need a more traditional player so I can download things for mdp. Check what pico sent me regarding the windows in docker solution or try to get itunes working or just get spotify....
 
 ## Home Lab
 
