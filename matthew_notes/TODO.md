@@ -70,12 +70,13 @@ What follows is a general overview of potential future projects I want to do, or
 		- [x] The same happens for kicad.... ✅ 2025-08-22
 		- [x] https://github.com/SoftFever/OrcaSlicer/issues/9244 ✅ 2025-08-22
 		- [x] https://github.com/SoftFever/OrcaSlicer/issues/8361 ✅ 2025-08-22
-- [ ] Wanted to rice Discord and get my streaming quality better and up and ready.
+- [x] Wanted to rice Discord and get my streaming quality better and up and ready. ✅ 2025-08-22
 - [ ] Add some applications as systemd services
 	- [x] Waybar. ✅ 2025-07-13
 	- [ ] Clipboard.
 	- [x] A lot of processes I have hyprland start and detach from could probably made services or one shot systemd tasks. ✅ 2025-07-13
 - [ ] Hyprland fixes so most things works well enough with xwayland and so forth.
+	- [ ] This seems to be to generalised and too case by case basis based on the application. For example orca-slicer worked but other nvidia drivers on h31mda11 brtoke it. 
 - [x] I want to change some waybar things, make it sharper cleaner maybe transparent. ✅ 2025-07-13
 	- [x] Look at some examples. ✅ 2025-07-13
 	- [x] Same for hyprland windows? ✅ 2025-07-13
