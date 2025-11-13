@@ -48,3 +48,4 @@ Organizing games by what I currently own and what has been played
 - [Final Girl](https://boardgamegeek.com/boardgame/277659/final-girl)
     - [Happy Trials Horror](https://boardgamegeek.com/boardgameexpansion/307683/final-girl-the-happy-trails-horror)
     - [Into The Void](https://boardgamegeek.com/boardgameexpansion/354775/final-girl-into-the-void)
+    - [Hell To Pay](https://boardgamegeek.com/boardgameexpansion/401727/final-girl-hell-to-pay)

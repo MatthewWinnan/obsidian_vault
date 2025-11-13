@@ -4,7 +4,10 @@ and ones that I think the base does a good job. I will also be including what ea
 
 TODO:
 - Voidfall
-- Spirit Island
-    - Maybe only when I get the expansions, rather massive set
+    - Files Done
 - Stardew Valley
+- Creature Caravan
+    - Files Done
+- Wyrmspan Dragon Academy
+    - Files Done
 - Mage Knight (When I get it)

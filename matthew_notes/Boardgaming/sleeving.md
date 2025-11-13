@@ -7,12 +7,12 @@ The main scope is broken into sleeving sizes and what games they are for.
 ## Mini Cards (Mini Euro) (44mm x 67mm):
 ### Current Sleeve Round
 - ~~Dune Uprising: 65~~
-- ~~Dune Bloodlines: 42
+- ~~Dune Bloodlines: 42~~
 - ~~Dune Rise Of XI: 21~~
 - ~~Dune Immortality: 15~~
-- Stardew Valley: 230
-- Voidfall: 252
-Total: 482
+- ~~Stardew Valley: 230~~
+- ~~Voidfall: 252~~
+Total: 0
 
 ### Later Sleeve Rotation
 
