@@ -4,15 +4,6 @@ Wish list, wanting to buy and next planned purchase.
 
 ## Next To Buy
 
-- [SETI](https://boardgamegeek.com/boardgame/418059/seti-search-for-extraterrestrial-intelligence)
-    - [lvlupstore](https://levelupstore.co.za/products/seti-search-for-extraterrestrial-intelligence?_pos=1&_sid=ab4ba2a68&_ss=r)
-- [Mage Knight](https://boardgamegeek.com/boardgame/96848/mage-knight-board-game)
-    - [D20 Battle Ground](https://d20battleground.co.za/products/mage-knight-board-game?_pos=1&_sid=3b2cab586&_ss=r)
-    - [WizKidz](https://shop.wizkids.com/products/mage-knight-board-game-ultimate-edition-online-store)
-- [Arkham Horror Core Set](https://boardgamegeek.com/boardgame/359609/arkham-horror-the-card-game-revised-core-set/sleeves)
-    - [lvlupstore](https://levelupstore.co.za/products/arkham-horror-revised-core-set?_pos=3&_sid=66ed2a765&_ss=r)
-    - [big box](https://www.thebigbox.co.za/game/arkham-horror-the-card-game/)
-    - [geekhome](https://www.geekhome.co.za/product/arkham-horror-lcg-revised-core-set/)
 - [Final Girl](https://boardgamegeek.com/boardgame/277659/final-girl)
     - [Bad Times At Buddy Land](https://boardgamegeek.com/boardgameexpansion/438599/final-girl-bad-times-at-buddyland)
     - [Frightmare At Maple Lane](https://boardgamegeek.com/boardgameexpansion/310175/final-girl-frightmare-on-maple-lane)
@@ -24,10 +15,17 @@ Wish list, wanting to buy and next planned purchase.
     - [Branch And Claw](https://boardgamegeek.com/boardgameexpansion/193065/spirit-island-branch-and-claw)
     - [Nature Incarnate](https://boardgamegeek.com/boardgameexpansion/365137/spirit-island-nature-incarnate)(Seems to be out of print :()
     - [Feather And Flame](https://boardgamegeek.com/boardgameexpansion/356510/spirit-island-feather-and-flame)
+- [Flamecraft](https://boardgamegeek.com/boardgame/336986/flamecraft)
+- [Arkham Horror Core Set](https://boardgamegeek.com/boardgame/359609/arkham-horror-the-card-game-revised-core-set/sleeves)
+    - [lvlupstore](https://levelupstore.co.za/products/arkham-horror-revised-core-set?_pos=3&_sid=66ed2a765&_ss=r)
+    - [big box](https://www.thebigbox.co.za/game/arkham-horror-the-card-game/)
+    - [geekhome](https://www.geekhome.co.za/product/arkham-horror-lcg-revised-core-set/)
 
 
 ## Wishlist
 
+- [SETI](https://boardgamegeek.com/boardgame/418059/seti-search-for-extraterrestrial-intelligence)
+    - [lvlupstore](https://levelupstore.co.za/products/seti-search-for-extraterrestrial-intelligence?_pos=1&_sid=ab4ba2a68&_ss=r)
 - Pandemic Expansions:
     - [Pandemic: On The Brink](https://boardgamegeek.com/boardgameexpansion/40849/pandemic-on-the-brink)
     - [Pandemic: State Of Emergency](https://boardgamegeek.com/boardgameexpansion/168703/pandemic-state-of-emergency)

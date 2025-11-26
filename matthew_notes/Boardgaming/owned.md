@@ -31,6 +31,9 @@ Organizing games by what I currently own and what has been played
     - [Into The Void](https://boardgamegeek.com/boardgameexpansion/354775/final-girl-into-the-void)
     - [Panic At Station 2891](https://boardgamegeek.com/boardgameexpansion/354776/final-girl-panic-at-station-2891)
     - [Hell To Pay](https://boardgamegeek.com/boardgameexpansion/401727/final-girl-hell-to-pay)
+- [Mage Knight](https://boardgamegeek.com/boardgame/96848/mage-knight-board-game)
+- [Imperium: Classics](https://boardgamegeek.com/boardgame/318184/imperium-classics)
+- [Imperium: Legends](https://boardgamegeek.com/boardgame/318182/imperium-legends)
 
 ## Played
 
@@ -49,3 +52,4 @@ Organizing games by what I currently own and what has been played
     - [Happy Trials Horror](https://boardgamegeek.com/boardgameexpansion/307683/final-girl-the-happy-trails-horror)
     - [Into The Void](https://boardgamegeek.com/boardgameexpansion/354775/final-girl-into-the-void)
     - [Hell To Pay](https://boardgamegeek.com/boardgameexpansion/401727/final-girl-hell-to-pay)
+    - [Panic At Station 2891](https://boardgamegeek.com/boardgameexpansion/354776/final-girl-panic-at-station-2891)
