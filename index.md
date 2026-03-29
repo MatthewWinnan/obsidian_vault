@@ -15,6 +15,7 @@ Currently the topics include #HomeLabSetup and #PCBuild. The latter focuses on r
 - [[VyOS Setup]]
 - [[General Remote Access]]
 - [[Basic Notes|NixOS Notes]]
+- [[Weather Station Project]]
 
 ### PC Building
 - [[PC Building Intro]]
