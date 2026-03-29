@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Boardgaming/introduction.md",
+                "file": "Home Lab Setup/Weather Station/Weather Station Project.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "introduction"
+              "title": "Weather Station Project"
             }
           }
         ]
@@ -166,8 +166,14 @@
   },
   "active": "022a59895e8a8f51",
   "lastOpenFiles": [
-    "Boardgaming/sleeving.md",
+    "CLAUDE.md",
+    "Home Lab Setup/Remote Access/Tailscale.md",
+    "Home Lab Setup/Weather Station/Weather Station Project.md",
+    "Home Lab Setup/Weather Station",
+    "Home Lab Setup/Remote Access/Proxy Server Setup.md",
+    "Home Lab Setup/Remote Access/General Remote Access.md",
     "Boardgaming/introduction.md",
+    "Boardgaming/sleeving.md",
     "index.md",
     "Mechanical Keyboard Project/General Links.md",
     "Mechanical Keyboard Project/Initial 3D Print Ideas.md",
@@ -189,8 +195,6 @@
     "Home Lab Setup/Router Setup/RFC Archive.md",
     "Home Lab Setup/Router Setup/Configuring PPPoE.md",
     "Home Lab Setup/Router Setup/Configuring NAT.md",
-    "Home Lab Setup/Remote Access/Tailscale.md",
-    "Home Lab Setup/Remote Access/General Remote Access.md",
     "Home Lab Setup/Proxmox Setup/General Proxmox Notes.md",
     "Home Lab Setup/NixOS/TODO Fix.md",
     "Home Lab Setup/NixOS/Basic Notes.md",
@@ -198,11 +202,7 @@
     "Home Lab Setup/Remote Access",
     "Home Lab Setup/Proxmox Setup",
     "Home Lab Setup/NixOS",
-    "Home Lab Setup",
     "files/images/pppoe_discovery.png",
-    "Boardgaming/wishlist.md",
-    "Boardgaming/owned.md",
-    "Boardgaming/inserts.md",
     "matthew_notes/files/images/pppoe_discovery.png"
   ]
 }
