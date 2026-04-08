@@ -74,11 +74,11 @@
 
 ## AI Integration
 
-| Tool         | Alias   | Purpose                 | My Config                    |
-| ------------ | ------- | ----------------------- | ---------------------------- |
-| Claude Code  | `cx`    | AI coding assistant     | ✅ Have                       |
-| ~~OpenCode~~ | ~~`c`~~ | ~~Alternative AI tool~~ | ~~❌ Check out~~              |
-| Voxtype      | -       | Voice dictation         | ✅ Have (voxtype-vulkan)      |
+| Tool         | Alias   | Purpose                 | My Config                                      |
+| ------------ | ------- | ----------------------- | --------------------------------------------- |
+| Claude Code  | `cx`    | AI coding assistant     | ✅ Ha                                           |
+| ~~OpenCode~~ | ~~`c`~~ | ~~Alternative AI tool~~ | ~~❌ Check ou                                   |
+| Voxtype      | -       | Voice dictation       ⚠️ Still need to configure and learn workflow ure  |
 
 ---
 
