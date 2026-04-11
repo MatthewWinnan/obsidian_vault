@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Home Lab Setup/Media Server/Media Stack Setup.md",
+                "file": "Home Lab Setup/Media Server/Music Stack Setup.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Media Stack Setup"
+              "title": "Music Stack Setup"
             }
           }
         ]
@@ -177,12 +177,14 @@
   },
   "active": "022a59895e8a8f51",
   "lastOpenFiles": [
-    "Interesting Finds/MemPalace - AI Memory System.md",
+    "Home Lab Setup/Media Server/Media Stack Setup.md",
+    "Home Lab Setup/Media Server/Music Stack Setup.md",
     "Home Lab Setup/Network Expansion - SBC Selection.md",
     "Home Lab Setup/Media Server/Jellyfin Setup.md",
+    "Home Lab Setup/Remote Access/Proxy Server Setup.md",
+    "Interesting Finds/MemPalace - AI Memory System.md",
     "Interesting Finds/Omarchy Research.md",
     "Home Lab Setup/Media Server",
-    "Home Lab Setup/Remote Access/Proxy Server Setup.md",
     "Home Lab Setup/Remote Access/Proxy Server Setup.md.tmp.23817.1775507802885",
     "Home Lab Setup/Home Assistant/Home Assistant Setup.md",
     "Home Lab Setup/Remote Access/General Remote Access.md",
@@ -205,8 +207,6 @@
     "TODO.md",
     "PC Building/CPU/RiscV Improvements.md",
     "PC Building/CPU/General CPU.md",
-    "PC Building/CPU/ARM Improvements.md",
-    "PC Building/PC Building Intro.md",
     "PC Building/CPU",
     "PC Building",
     "Mechanical Keyboard Project/Kyria rev 3",

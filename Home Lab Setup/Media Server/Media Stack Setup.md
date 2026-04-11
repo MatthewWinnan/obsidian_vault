@@ -66,7 +66,7 @@ Configure services in this order after `nixos-rebuild switch`:
 
 First-time setup:
 
-1. Default login: `admin` / `adminadmin`
+1. Default login: `admin` / (password obtained from journalctl during initial install.)
 2. Go to **Tools → Options → Downloads**
 3. Set **Default Save Path**: `/media/downloads`
 4. Set **Keep incomplete torrents in**: `/media/downloads/incomplete`

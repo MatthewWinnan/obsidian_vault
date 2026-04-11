@@ -497,7 +497,7 @@ In Tailscale Admin Console (https://login.tailscale.com/admin/acls), add:
 **Consider Later:**
 - [ ] Add rate limiting for brute-force protection
 - [ ] Set up fail2ban for repeated failed attempts
-- [ ] Forward auth (Authelia/Authentik) for SSO across services
+- [x] Forward auth (Authelia/Authentik) for SSO across services ✅ 2026-04-09
 - [ ] Monitor Home Assistant logs for suspicious activity
 
 ### Alternative: Tailnet-Only Access (Most Secure)
