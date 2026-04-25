@@ -33,7 +33,7 @@ What follows is a general overview of potential future projects I want to do, or
 - [ ] Need to send it in for service
 	- [ ] This should address the noises when going in the positive Y direction.
 	- [ ] I should also address the X-axis movements being rather resistent.
-- [ ] Print potplant Junimo for GF [Junimo 1](https://www.printables.com/model/208635-stardew-valley-junimo-vase-for-plant-pot/files), [Junimo 2](https://www.printables.com/model/233488-stardew-valley-junimo-succulent-holder)
+- [x] Print potplant Junimo for GF [Junimo 1](https://www.printables.com/model/208635-stardew-valley-junimo-vase-for-plant-pot/files), [Junimo 2](https://www.printables.com/model/233488-stardew-valley-junimo-succulent-holder) ✅ 2026-04-19
 
 ## NixOS
 
@@ -46,9 +46,9 @@ What follows is a general overview of potential future projects I want to do, or
 		- [x] Movies ✅ 2025-05-25
 			- [x] Using [Lobster](https://github.com/justchokingaround/lobster?tab=readme-ov-file#nixos-flake) ✅ 2025-05-25
 - [x] I saw a new project [RMPC](https://github.com/mierak/rmpc) ✅ 2025-06-01
-	- [ ] I need to customize it and figure out how to organize music.
-	- [ ] Get a nice music downloader, currently downloading from youtube with yt-dlp
-- [ ] I still need to finally port my main 25.05 config to the work laptop.
+	- [x] I need to customize it and figure out how to organize music. ✅ 2026-04-19
+	- [x] Get a nice music downloader, currently downloading from youtube with yt-dlp ✅ 2026-04-19
+- [x] I still need to finally port my main 25.05 config to the work laptop. ✅ 2026-04-19
 - [x] Get a nice workflow for RUST based development, I suppose just using cargo is enough and having that on system? I won't be installing just running. I suppose the question is does it just need to get the compiler's PATH or is there a runtime of sorts? ✅ 2025-07-13
 - [x] I want to get the big RTX3070 to work on NixOS so I can fully integrate into the Linux community. ✅ 2025-07-13
 - [ ] Look at alternative LSP for Nix?
@@ -84,8 +84,8 @@ What follows is a general overview of potential future projects I want to do, or
 - [ ] Learn overlays and overrides more, have an idea but in context of NixOS not sure.
 	- [ ] Also is it opt in or can any attribute set take an overlay to change the contents?
 	- [ ] Maybe pills helps.e
-- [ ] Customize yazi with some plugins. 
-- [ ] Customize tmux with some plugins, maybe move rather to just tmux instead of zellij. 
+- [x] Customize yazi with some plugins. ✅ 2026-04-19
+- [x] Customize tmux with some plugins, maybe move rather to just tmux instead of zellij. ✅ 2026-04-19
 - [ ] Zellij I do have the problem where a session on a remote being accessed through ssh is closed when the ssh is dropped, defeats the use case for me. I have seen some other solutions (hacky albeit) to not use tmux or zellij and some single use tools with the terminal of choice's built in window management.
 - [ ] I need a more traditional player so I can download things for mdp. Check what pico sent me regarding the windows in docker solution or try to get itunes working or just get spotify....
 
@@ -104,12 +104,12 @@ What follows is a general overview of potential future projects I want to do, or
 	- [ ] [Plex Server](https://www.plex.tv/)
 		- [ ] Integrate mov-cli with it mayhaps -> [mov-cli-jellyplex](https://github.com/mov-cli/mov-cli-jellyplex)
 		- [ ] [Tutorial Video [1]](https://www.howtogeek.com/did-you-know-you-could-stream-plex-or-jellyfin-in-your-terminal/)
-	- [ ] [Jellyfin](https://jellyfin.org/)
-		- [ ] https://www.youtube.com/watch?v=FpFFnTH6-Ww
+	- [x] [Jellyfin](https://jellyfin.org/) ✅ 2026-04-19
+		- [x] https://www.youtube.com/watch?v=FpFFnTH6-Ww ✅ 2026-04-19
 - [ ] Maybe I should add Hashtech Vault?
 	- [ ] To this extent would Vault Guard be a good idea to keep my passwords for local use?
-- [ ] Revive my Home Assistant and get actual information.
-	- [ ] First figure out how to send data via MQTT
+- [x] Revive my Home Assistant and get actual information. ✅ 2026-04-19
+	- [x] First figure out how to send data via MQTT ✅ 2026-04-19
 	- [ ] Decide on sensors to use, MCU will just be one of my pico W's laying about
 - [ ] GF uses a library service to host public books, maybe get that up and running too.
 	- [ ] Find out the name.

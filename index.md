@@ -17,6 +17,7 @@ Currently the topics include #HomeLabSetup and #PCBuild. The latter focuses on r
 - [[Basic Notes|NixOS Notes]]
 - [[Home Assistant Setup]]
 - [[Weather Station Project]]
+- [[Home Lab Setup/Media Server/Library Stack Setup|Library Stack Setup]]
 
 ### PC Building
 - [[PC Building Intro]]
@@ -29,6 +30,9 @@ Currently the topics include #HomeLabSetup and #PCBuild. The latter focuses on r
 ### Mechanical Keyboard Project
 - [[General Links|Keyboard Links]]
 - [[Mechanical Keyboard Project/Kyria rev 3/Introduction|Kyria Rev 3]]
+
+### Rust
+- [[Rust/Introduction|Learning Rust]]
 
 ### Other
 - [[Interesting Finds/Introduction|Interesting Finds]]
