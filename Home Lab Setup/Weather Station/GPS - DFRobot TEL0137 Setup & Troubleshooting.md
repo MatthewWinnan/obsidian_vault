@@ -1,8 +1,8 @@
-# GPS - DFRobot K-172 Setup & Troubleshooting
+# GPS - DFRobot TEL0137 Setup & Troubleshooting
 
 ## Device
 
-- **Product**: [DFRobot K-172 High Accuracy USB GPS Module](https://www.dfrobot.com/product-2216.html)
+- **Product**: [DFRobot USB GPS Receiver Module (TEL0137)](https://www.dfrobot.com/product-2216.html)
 - **Chip**: U-blox 7 (`hwVersion 00070000`)
 - **Firmware**: `1.00 (59842)`, protocol version 14.00
 - **Supported constellations** (per `MON-VER`): GPS, SBAS, GLONASS (GLO), QZSS
@@ -13,7 +13,7 @@
 
 ## Current Status
 
-Integrated into **fr3yr** (home assistant server) via a 5m USB 2.0 extension cord run outdoors. The K-172 is managed by `gpsd` and GPS data is published to Home Assistant via MQTT auto-discovery. The USB cable run is temporary — rain will damage the exposed cable. The goal is to incorporate a **wireless GPS chip** as part of the permanent weather station build.
+Integrated into **fr3yr** (home assistant server) via a 5m USB 2.0 extension cord run outdoors. The TEL0137 is managed by `gpsd` and GPS data is published to Home Assistant via MQTT auto-discovery. The USB cable run is temporary — rain will damage the exposed cable. The goal is to incorporate a **wireless GPS chip** as part of the permanent weather station build.
 
 ### NixOS Integration (fr3yr)
 - `gpsd` reads from `/dev/ttyGPS` (stable udev symlink matching `1546:01a7`)
@@ -76,7 +76,7 @@ The `GLO` in the extension list means the chip *supports* GLONASS mode in princi
 
 Concurrent multi-constellation support (GPS + GLONASS + Galileo/BeiDou simultaneously) only arrived with the **U-blox M8 platform** (UBX-M8030 chip, used in NEO-M8N and similar modules) — see [u-blox M8 Multi-GNSS Platform Offers Concurrent Tracking (GPS World)](https://www.gpsworld.com/u-blox-m8-multi-gnss-platform-offers-concurrent-tracking/). This is a hardware generational difference; no firmware update to the U-blox 7 can add concurrent constellation support.
 
-#### Why the K-172 Likely Can't Do GLONASS Even in Switch Mode — RF Hardware
+#### Why the TEL0137 Likely Can't Do GLONASS Even in Switch Mode — RF Hardware
 
 The datasheet note about "dedicated hardware preparation during the design-in phase" refers to three specific RF components that must be designed for **both** GPS L1 (1575.42 MHz) and GLONASS L1 (~1602 MHz) — frequencies that are 27 MHz apart. Per the [NEO-7 Hardware Integration Manual (UBX-13003704)](https://content.u-blox.com/sites/default/files/products/documents/MAX7-NEO7_HardwareIntegrationManual_(UBX-13003704).pdf) and the [GLONASS & GPS HW Design Application Note (GPS.G6-CS-10005)](https://content.u-blox.com/sites/default/files/products/documents/GLONASS-HW-Design_AppNote_(GPS.G6-CS-10005).pdf):
 
@@ -86,13 +86,13 @@ The datasheet note about "dedicated hardware preparation during the design-in ph
 | **Ceramic patch antenna** | Tuned to 1575 MHz, narrow bandwidth | Must cover 1602 MHz; u-blox recommends minimum 25×25×4mm for dual-band |
 | **Active antenna LNA** | Internal bandpass filter passes GPS only | Filter must be wide enough to pass both bands |
 
-The K-172 uses a small, cheap ceramic patch antenna that is almost certainly tuned for GPS L1 only. Even if the chip accepted a GLONASS-only `CFG-GNSS` configuration, the antenna and SAW filter would severely attenuate GLONASS signals before they reach the chip. The consistent `NAK` response is most likely the chip detecting via hardware configuration straps that the module was not prepared for GLONASS reception.
+The TEL0137 uses a small, cheap ceramic patch antenna that is almost certainly tuned for GPS L1 only. Even if the chip accepted a GLONASS-only `CFG-GNSS` configuration, the antenna and SAW filter would severely attenuate GLONASS signals before they reach the chip. The consistent `NAK` response is most likely the chip detecting via hardware configuration straps that the module was not prepared for GLONASS reception.
 
 **Practical impact for a static installation in RSA**: GPS-only gives a solid 3D fix with 7–9 satellites and HDOP ~1.1, which is perfectly adequate for a stationary weather station. A newer NEO-M8N based module would give better DOP, faster cold starts, and improved reliability in marginal sky-view conditions — and would have the correct wideband RF frontend by design.
 
 #### Switching to GLONASS-Only Mode (Future Reference — May Not Work Due to RF Hardware)
 
-Although not currently needed (GPS is fine in RSA), it is theoretically possible to switch the chip to GLONASS-only by sending a `CFG-GNSS` message that disables GPS and enables GLONASS, followed by a save and cold reset. The chip must have GPS disabled in the same message — enabling GLONASS while GPS is active is what causes the NAK, per the [NEO-7 Hardware Integration Manual](https://content.u-blox.com/sites/default/files/products/documents/MAX7-NEO7_HardwareIntegrationManual_(UBX-13003704).pdf). **Note**: even if the chip accepts this config, actual GLONASS reception may be poor due to the GPS-only antenna and filter on the K-172 module.
+Although not currently needed (GPS is fine in RSA), it is theoretically possible to switch the chip to GLONASS-only by sending a `CFG-GNSS` message that disables GPS and enables GLONASS, followed by a save and cold reset. The chip must have GPS disabled in the same message — enabling GLONASS while GPS is active is what causes the NAK, per the [NEO-7 Hardware Integration Manual](https://content.u-blox.com/sites/default/files/products/documents/MAX7-NEO7_HardwareIntegrationManual_(UBX-13003704).pdf). **Note**: even if the chip accepts this config, actual GLONASS reception may be poor due to the GPS-only antenna and filter on the TEL0137 module.
 
 Stop gpsd first, then run:
 
@@ -156,14 +156,14 @@ with serial.Serial(dev, 9600, timeout=2) as s:
 To revert to GPS-only, swap the flags: GPS `0x00000001`, GLONASS `0x00000000`, and run the same sequence.
 
 ### Counterfeit Chipsets (Applies to Third-Party VK-172 Units)
-Many VK-172-style dongles sold on Amazon have fake U-blox chips. The DFRobot K-172 should be genuine. Signs of a counterfeit:
+Many VK-172-style dongles sold on Amazon have fake U-blox chips. The DFRobot TEL0137 should be genuine. Signs of a counterfeit:
 - Doesn't respond to U-blox configuration commands
 - Incorrect `GPTXT` messages in U-center software
 - Test with [u-blox u-center](https://www.u-blox.com/en/product/u-center) on Windows
 
 ## What Worked
 
-- Connecting the K-172 via a **5m USB 2.0 extension cord** and placing the module outside with clear sky view. Got a fix after waiting for the cold start to complete.
+- Connecting the TEL0137 via a **5m USB 2.0 extension cord** and placing the module outside with clear sky view. Got a fix after waiting for the cold start to complete.
 - Stable device path via udev rule matching `ATTRS{idVendor}=="1546", ATTRS{idProduct}=="01a7"` → symlink `/dev/ttyGPS`
 - `gpsd` with `-n` flag (start reading immediately without waiting for a client) ensures a satellite fix is acquired on boot
 - Typical fix quality on fr3yr: **3D DGPS FIX**, 7–9 satellites used, HDOP ~1.1, EPX/EPY ~2.5–3.5m
@@ -178,8 +178,8 @@ The USB cable run outdoors is not weatherproof long-term. Options to make GPS a 
 
 ## Research Links
 
-### DFRobot / VK-172
-- [DFRobot K-172 Product Page](https://www.dfrobot.com/product-2216.html)
+### DFRobot TEL0137 / VK-172 Community Name
+- [DFRobot TEL0137 Product Page](https://www.dfrobot.com/product-2216.html)
 - [DFRobotdl USB GPS Script (GitHub)](https://github.com/DFRobotdl/USB_GPS_EN)
 - [VK-172 GPS Review - John's Tech Blog](https://hagensieker.com/2024/01/02/vk-172-gps-review/)
 - [VK-172 USB GPS on the Raspberry Pi - TeelSys](https://teelsys.com/vk-172-usb-gps-on-the-raspberry-pi/)
@@ -195,7 +195,7 @@ The USB cable run outdoors is not weatherproof long-term. Options to make GPS a 
 - [NEO-7 Product Summary (UBX-13003342)](https://content.u-blox.com/sites/default/files/products/documents/NEO-7_ProductSummary_(UBX-13003342).pdf)
 
 ### UBX-G7020 Chip-Level Documentation (for posterity)
-The UBX-G7020-KT is the bare silicon inside the K-172 module. These documents are chip-level (targeting PCB designers, distributed under NDA) and reveal the same conclusions as the NEO-7 module datasheet for end-use purposes — single constellation, GPS/GLONASS switch-mode, Galileo/BeiDou listed as hardware-ready but not implemented in firmware 1.00.
+The UBX-G7020-KT is the bare silicon inside the TEL0137 module. These documents are chip-level (targeting PCB designers, distributed under NDA) and reveal the same conclusions as the NEO-7 module datasheet for end-use purposes — single constellation, GPS/GLONASS switch-mode, Galileo/BeiDou listed as hardware-ready but not implemented in firmware 1.00.
 - [UBX-G7020-Kx Data Sheet — Confidential (GPS.G7-HW-12001)](http://innovictor.com/pdf/UBX-G7020-Kx_DataSheet_(GPS%20G7-HW-12001)_Confidential.pdf) — chip datasheet covering KT (commercial) and KA (automotive) QFN40 variants; confirms integrated TCXO and LNA, and that the RF frontend covers both L1 (1575 MHz) and G1 (1602 MHz) bands
 - [UBX-G7020 Product Summary (UBX-13003349)](https://content.u-blox.com/sites/default/files/products/documents/UBX-G7020_ProductSummary_(UBX-13003349).pdf)
 - [UBX-G7020 series — u-blox product page](https://www.u-blox.com/en/product/ubx-g7020-series) — end-of-life notice confirmed here

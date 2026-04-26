@@ -18,11 +18,11 @@ Build and deploy a weather station with rain gauge, anemometer, and wind directi
   - Wind vane (wind direction)
   - Uses RJ11 connectors
 
-- **GPS Receiver**: [DFRobot K-172 High Accuracy USB GPS Module](https://www.dfrobot.com/product-2216.html)
+- **GPS Receiver**: [DFRobot USB GPS Receiver Module (TEL0137)](https://www.dfrobot.com/product-2216.html)
   - Uses U-blox chipset, GPS + GLONASS dual constellation
   - USB interface (shows up as `/dev/ttyACM0` or `/dev/ttyUSB0` on Linux)
   - Built-in backup battery retains almanac data between power cycles
-  - See [[GPS - DFRobot K-172 Setup & Troubleshooting]] for full notes
+  - See [[GPS - DFRobot TEL0137 Setup & Troubleshooting]] for full notes
   - **Current status**: Working temporarily via 5m USB 2.0 extension cord run outdoors — rain exposure risk, needs permanent wireless solution
 
 ### Controller
