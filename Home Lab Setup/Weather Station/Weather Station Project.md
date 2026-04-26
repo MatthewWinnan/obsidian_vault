@@ -18,6 +18,13 @@ Build and deploy a weather station with rain gauge, anemometer, and wind directi
   - Wind vane (wind direction)
   - Uses RJ11 connectors
 
+- **GPS Receiver**: [DFRobot K-172 High Accuracy USB GPS Module](https://www.dfrobot.com/product-2216.html)
+  - Uses U-blox chipset, GPS + GLONASS dual constellation
+  - USB interface (shows up as `/dev/ttyACM0` or `/dev/ttyUSB0` on Linux)
+  - Built-in backup battery retains almanac data between power cycles
+  - See [[GPS - DFRobot K-172 Setup & Troubleshooting]] for full notes
+  - **Current status**: Working temporarily via 5m USB 2.0 extension cord run outdoors — rain exposure risk, needs permanent wireless solution
+
 ### Controller
 - **Enviro Weather Pico W Aboard**: [Pimoroni Board](https://www.pishop.co.za/store/enviro-weather-pico-w-aboard---board-only?keyword=Weather&category_id=0)
   - Built-in WiFi (Pico W)
@@ -193,7 +200,13 @@ Purchase a proper weather station mounting bracket/shield.
 - [ ] Design mounting for solar panel
 - [ ] Implement autonomous charging
 
-### Phase 7: Future - Additional Sensors
+### Phase 7: Future - GPS Wireless Integration
+- [ ] Replace USB GPS with wireless GPS solution (ESP32 with GPS module, or similar)
+- [ ] Transmit GPS data wirelessly to avoid cable exposure to weather
+- [ ] Weatherproof GPS antenna mount with clear sky view
+- [ ] Integrate GPS timestamp and location into MQTT data payload
+
+### Phase 8: Future - Additional Sensors
 - [ ] Integrate lightning detector
 - [ ] Integrate rain/snow sensor with heating
 - [ ] Update Home Assistant dashboard with new sensors
