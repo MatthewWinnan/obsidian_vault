@@ -17,6 +17,7 @@ Currently the topics include #HomeLabSetup and #PCBuild. The latter focuses on r
 - [[Basic Notes|NixOS Notes]]
 - [[Home Assistant Setup]]
 - [[Weather Station Project]]
+- [[Home Lab Setup/Desktop/Waybar Satellite Widget|Waybar Satellite Widget]]
 - [[Home Lab Setup/Media Server/Library Stack Setup|Library Stack Setup]]
 
 ### PC Building

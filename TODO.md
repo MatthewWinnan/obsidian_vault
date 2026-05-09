@@ -13,6 +13,7 @@ What follows is a general overview of potential future projects I want to do, or
 - [ ] I still need to get keymap viewer working for the  TIE-TEM.
 - [x] Finish flashing my newest keymap and test it, for both the kyria and TIE-TEM. ✅ 2025-07-13
 - [ ] I do not like my Kyria_View naming convention, this only implies one board, rather use my name to imply it is my fork.
+- [ ] Look at separating from the pinned ZMK firmware branch — either update the pin or restructure so `kyria_view` is its own branch decoupled from the pinned firmware.
 - [ ] Finish my TIE-TEM write up and add images and files on how it was made printed etc. Also need to give the appropriate credits.
 - [x] Currently my TIE-TEM was incorrectly assembled, I would love to just have a per config overlay of sorts to remap the row definition only for left side, so the main TIE-TEM module I am pulling in can be left with the correct mapping. ✅ 2025-07-13
 	- [x] This is apparently not possible since I can not configure flags for the compiler since the build system is the one loading it in for the compiler. ✅ 2025-07-13
@@ -122,6 +123,28 @@ What follows is a general overview of potential future projects I want to do, or
 	- [ ] Find out how to employ this redundency, selection switch going to fibre box and selection switch from routers to main network.
 	- [ ] Can I have two systems registered to pppoe, or whatever mechanism the ISP uses to verify the device at the place I end up staying. 
 	- [ ] I also need to work in access points, what is a nice way. The default router has one, however my own won't (unless I add a dongle). Would it work to just have the AP connect to the second layer, ie my internal network switch? This should give it a path to the default gateway and allow other devices to use it? 
+
+## Pico / Electronics
+
+- [ ] Build a portable hiker/field weather station inspired by the [e-hiker](https://community.dfrobot.com/makelog-314522.html)
+	- **Concept**: standalone battery-powered device for outdoor use — no phone needed, no WiFi required in the field. Could sync data to HA when back in range.
+	- **Sensors to integrate** (many already have libs in pico_nix):
+		- [ ] BMP180 / BME280 — pressure, temperature, humidity (done)
+		- [ ] GPS module — location, altitude (already feeding env-sensor via MQTT)
+		- [ ] UV index sensor (e.g. VEML6075)
+		- [ ] Ambient light (e.g. BH1750)
+	- **Display**: e-paper would be ideal (low power, readable in sunlight) — e.g. Waveshare 2.9" e-ink. Alternatively a small colour TFT.
+	- **Power**: LiPo/18650 + solar charging (e.g. TP4056 + small panel). INA219 already used for battery monitoring.
+	- **Data logging**: SD card, CSV with timestamp + GPS coordinates (similar to e-hiker).
+	- **Firmware behaviour**:
+		- [ ] Display-always-on (e-paper draws nothing when static)
+		- [ ] WiFi off by default in field mode; enable on demand to push logs to HA / MQTT
+		- [ ] Reuse provisioning pattern from env-sensor / air-sensor for WiFi creds
+		- [ ] Barometric altitude using GPS-calibrated QNH (already implemented in env-sensor)
+		- [ ] Simple safety/condition summary page (e.g. "conditions OK / caution / severe")
+	- **Board**: Pico W (RP2040) — already familiar, WiFi built in, same toolchain
+	- **3D printed enclosure**: rugged, weatherproof, clip or strap mount
+	- **Project name** (when started): `pico-w-hiker-sensor` or `pico-w-field-sensor`
 
 ## Treasure Trove
 
