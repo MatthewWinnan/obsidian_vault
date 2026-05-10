@@ -182,10 +182,14 @@ Purchase a proper weather station mounting bracket/shield.
 - [ ] Set up historical data logging
 - [ ] Configure alerts (high wind, heavy rain, low battery)
 
-### Phase 5: Optional - Public Publishing
-- [ ] Decide on publishing platform (Weather Underground, PWSWeather, etc.)
-- [ ] Implement data upload
-- [ ] Register station
+### Phase 5: Public Data Contribution
+See [[Public Data Contribution Plan]] for the full plan, API details, and calibration requirements.
+- [ ] Register Weather Underground PWS station
+- [ ] Implement Sensor.Community POST via HA rest_command
+- [ ] Implement Weather Underground GET via HA rest_command
+- [ ] Accumulate 3 months of clean data for calibration evidence
+- [ ] Contact SAWS and SAAQIS with calibration dataset
+- [ ] Register CWOP station ID
 
 ## Research Links
 
