@@ -71,50 +71,94 @@ Reference: WMO-No. 8, Vol. I, §16.6.3, p. 566–567.
 | Parameter | Value | Notes |
 |-----------|-------|-------|
 | Sample rate | ~1 Hz (PMSA003 native) | One frame per second |
-| Publish interval | 10-sample average (~10 s) | `PUBLISH_INTERVAL = 10` |
-| Averaging window | 10 seconds | Too short for health-relevant reporting |
+| Publish interval | 60-sample average (1 min) | `PUBLISH_INTERVAL = 60` |
+| 1-hour rolling mean | Ring buffer of 60 × 1-min means | Valid after 60 min uptime |
+| NowCast | EPA weighted 12-hour mean | Valid after 2 h uptime |
+| 24-hour mean | HA statistics sensor (from 1-min readings) | Valid after 24 h uptime |
+| AQI category | WHO breakpoints applied to NowCast PM2.5 | "Unknown" until 2 h |
 | WiFi | Always-on | Not battery-optimised |
 
 **MQTT topics:**
 - State: `pico/air-sensor/state`
 - Status: `pico/air-sensor/status`
 
-**Current state payload:**
+**State payload (fully populated after 2 h uptime):**
 ```json
 {
   "pm1_0": 12, "pm2_5": 18, "pm10": 23,
+  "pm2_5_1h": 17.4, "pm10_1h": 22.1,
+  "nowcast_pm2_5": 16.8,
+  "aqi": "Moderate",
   "cnt_03": 1842, "cnt_05": 621, "cnt_10": 89,
   "cnt_25": 12, "cnt_50": 3, "cnt_100": 0
 }
 ```
 
+Fields are omitted from JSON until valid so HA shows "unknown" rather than stale data.
+
 ---
 
-## Recommended Improvements
+## AQI Pipeline
 
-To align with WMO/WHO best practice:
+```
+1 Hz raw reads
+    │
+    ▼ (60 readings)
+1-min mean  ──────────────────────────────► pm2_5 / pm10 (MQTT, always)
+    │
+    ▼ (ring buffer of 60 × 1-min means)
+1-hour rolling mean ──────────────────────► pm2_5_1h / pm10_1h (MQTT, after 60 min)
+    │                                        HA statistics sensor: 24h mean (after 24 h)
+    ▼ (push snapshot every 60 min)
+NowCast buffer (12 hourly snapshots)
+    │  w = Cmin/Cmax, clamped to [0.5, 1]
+    │  NowCast = Σ(Ci × wⁱ) / Σ(wⁱ)
+    ▼
+NowCast PM2.5 ────────────────────────────► nowcast_pm2_5 (MQTT, after 2 h)
+    │
+    ▼ WHO breakpoints (5/15/25/50 µg/m³) + hysteresis (±2 µg/m³)
+AQI category ─────────────────────────────► aqi string (MQTT, after 2 h)
+```
 
-### 1. Move to 1-min averaging
+### NowCast algorithm
 
-Collect ~60 samples (at 1 Hz), compute means, publish once per minute. This matches the minimum recommended sampling period and dramatically reduces noise.
+EPA NowCast is the standard real-time AQI approximation, designed to bridge responsiveness (1-min mean is too noisy) and the health-relevant timescale (24-hour mean is too slow for live display).
 
-### 2. Track a 60-min rolling mean for PM2.5/PM10
+- **Weight factor:** `w = Cmin / Cmax` over the 12-hour window, clamped to `[0.5, 1]`
+- **High variability** (e.g. fire event): `w` is small → recent hours dominate → fast response
+- **Stable conditions**: `w ≈ 1` → all 12 hours contribute equally → smooth output
+- **Edge case:** `Cmax = 0` (pristine air) → `w = 1` (equal weighting)
+- **Validity:** ≥2 of the 3 most recent hourly snapshots must be present. For a continuously running sensor this is simply count ≥ 2, reached at 2 h uptime.
 
-Use a ring buffer of 60 × 1-min PM values to compute the hourly mean. Publish alongside the 1-min reading. This gives the context needed to assess against WHO 24h guidelines (a full 24h mean requires 24 hours of data, but the 1h mean is already useful).
+**References:**
+- EPA Technical Assistance Document for AQI Reporting (EPA-454/B-18-007, 2018): NowCast algorithm §
+  https://www.airnow.gov/sites/default/files/2020-05/aqi-technical-assistance-document-sept2018.pdf
+- Wikipedia NowCast summary with pseudocode:
+  https://en.wikipedia.org/wiki/NowCast_(air_quality_index)
 
-### 3. Report WHO AQI breakpoints
+### WHO AQI category breakpoints
 
-For each 1-min and 1-hour PM2.5 publish, include a categorical descriptor:
+From WHO Global Air Quality Guidelines 2021 (ISBN 978-92-4-003422-8), Table 1 (PM2.5 24-h mean):
 
-| Category | PM2.5 1h (µg/m³) |
-|----------|-----------------|
+| Category | PM2.5 (µg/m³) |
+|----------|--------------|
 | Good | < 5 |
 | Fair | 5–15 |
 | Moderate | 15–25 |
 | Poor | 25–50 |
 | Very poor | > 50 |
 
-### 4. Deep-sleep battery mode
+Hysteresis of ±2 µg/m³ prevents rapid category flipping at boundaries.
+
+### 24-hour mean (HA statistics sensor)
+
+The HA `statistics` platform computes a rolling 24-hour mean from `sensor.air_pm2_5` history — no firmware changes needed. This matches the EPA daily AQI methodology (24-hour average) and the WHO 24-hour exposure standard. Reports "unknown" for the first 24 hours after HA restart.
+
+---
+
+## TODO — Future Work
+
+### Deep-sleep battery mode
 
 Follow the pico-w-env-sensor pattern: sleep between 1-min sample cycles, only power WiFi every N minutes. This would allow battery deployment.
 
@@ -299,6 +343,31 @@ Before approaching SAWS or SAAQIS, accumulate several months of clean data and c
 - **PMSA003**: Low-cost OPSS (WMO §16.6.3). Uncalibrated against reference instrument. Positive PM bias in high-humidity conditions (>85% RH). No humidity correction currently applied.
 - **BMP180 / BME280**: Consumer-grade MEMS pressure sensors. QNH normalised via GPS altitude (EMA). No traceability to national pressure standards.
 - **Tendency**: 3-hour WMO-aligned window, 10-min intervals (per WMO §3.5.1 recommendation). Fed by BME280 MSL mean.
+
+---
+
+### Do MOX Sensors Need a Chamber Like the PMSA003?
+
+No — the PMSA003 needs its internal fan and laser chamber because **optical particle counting requires controlled laminar flow** to present particles one at a time in a defined beam volume. MOX sensors work by chemical contact only — no precision airflow is needed for the sensor itself.
+
+However, the **sensor enclosure** still needs design for:
+
+| Concern | Solution |
+|---------|----------|
+| Slow diffusion response in sealed box | Ventilation ports or active fan |
+| Dust on oxide surface over time | PTFE membrane or mesh over inlet |
+| Liquid water ingress | PTFE membrane |
+| Heater self-heating of enclosure air | Vented enclosure — must breathe |
+| Post-event recovery flush | Fan flush cycle |
+| MQ heater warming adjacent sensors | Space sensors, direct airflow across all |
+
+**Practical enclosure for the external sensor chamber:**
+- Small vented box (louvered or with mesh patches)
+- PTFE membrane over each sensor inlet — protects the oxide, passes gas
+- 5V fan pulling air through, exhausting away from inlets
+- Fan runs 60–90 s before each read; stops after reading to save power
+- No complex internal geometry needed — just ensure fresh air reaches every sensor
+
 
 ---
 

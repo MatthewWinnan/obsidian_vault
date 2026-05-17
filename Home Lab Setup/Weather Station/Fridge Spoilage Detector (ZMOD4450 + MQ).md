@@ -215,30 +215,6 @@ Cold humid fridge air (~90% RH, ~3–5°C) travelling into ~22°C room air reach
 
 ---
 
-### Do MOX Sensors Need a Chamber Like the PMSA003?
-
-No — the PMSA003 needs its internal fan and laser chamber because **optical particle counting requires controlled laminar flow** to present particles one at a time in a defined beam volume. MOX sensors work by chemical contact only — no precision airflow is needed for the sensor itself.
-
-However, the **sensor enclosure** still needs design for:
-
-| Concern | Solution |
-|---------|----------|
-| Slow diffusion response in sealed box | Ventilation ports or active fan |
-| Dust on oxide surface over time | PTFE membrane or mesh over inlet |
-| Liquid water ingress | PTFE membrane |
-| Heater self-heating of enclosure air | Vented enclosure — must breathe |
-| Post-event recovery flush | Fan flush cycle |
-| MQ heater warming adjacent sensors | Space sensors, direct airflow across all |
-
-**Practical enclosure for the external sensor chamber:**
-- Small vented box (louvered or with mesh patches)
-- PTFE membrane over each sensor inlet — protects the oxide, passes gas
-- 5V fan pulling air through, exhausting away from inlets
-- Fan runs 60–90 s before each read; stops after reading to save power
-- No complex internal geometry needed — just ensure fresh air reaches every sensor
-
----
-
 ## Firmware Architecture
 
 ```

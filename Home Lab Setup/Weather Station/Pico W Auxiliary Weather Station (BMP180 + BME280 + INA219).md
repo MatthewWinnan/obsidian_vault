@@ -281,6 +281,54 @@ producing ~270 hPa. Fixed by storing raw Q24.8 from the Bosch formula and dividi
 
 Formula: `QNH = QFE / (1 - alt_m / 44330)^5.255`
 
+### ICAO and the International Standard Atmosphere
+
+**ICAO** = *International Civil Aviation Organization* — the UN specialized agency
+(Chicago Convention, 1944) that sets global civil aviation standards including
+navigation, airspace rules, and altimetry. Headquartered in Montreal.
+
+**Key references:**
+- [ICAO Doc 7488 — Manual of the ICAO Standard Atmosphere (official store, paid)](https://store.icao.int/en/manual-of-the-icao-standard-atmosphere-extended-to-80-kilometres-262500-feet-doc-7488)
+- [ICAO Doc 7488 3rd ed. 1993 — free PDF mirror (aviationchief.com)](http://www.aviationchief.com/uploads/9/2/0/9/92098238/icao_doc_7488_-_manual_of_icao_standard_atmosphere_-_3rd_edition_-_1994.pdf)
+- [WMO-No. 8 CIMO Guide — meteorological SLP standard (already in `docs/standards/`)](https://library.wmo.int/records/item/41650-guide-to-instruments-and-methods-of-observation)
+
+ICAO defines the **International Standard Atmosphere (ISA)**, a model of how
+temperature, pressure, and density vary with altitude under standardized conditions:
+
+| Parameter | ISA value at sea level | Lapse rate |
+|-----------|----------------------|------------|
+| Temperature | 15 °C (288.15 K) | −6.5 °C/km up to 11 km |
+| Pressure | 1013.25 hPa | — |
+| Density | 1.225 kg/m³ | — |
+
+The ISA temperature at 1458 m works out to **≈ 5.5 °C** (15 − 6.5 × 1.458).
+
+#### The ICAO simplified QNH formula
+
+```
+QNH = QFE / (1 − h / 44330)^5.255
+```
+
+This is derived from the hydrostatic equation + ISA temperature profile, collapsed
+into a single power-law expression. It is **temperature-independent by design** —
+a pilot can compute QNH from station pressure and altitude without knowing the
+actual temperature. The tradeoff is that it implicitly assumes ISA temperature at
+every altitude.
+
+#### Why this matters at 1458 m
+
+At sea level the ISA assumption is nearly harmless. At 1458 m the error compounds:
+
+| Temperature assumption | At 1458 m | Effect on QNH |
+|----------------------|-----------|--------------|
+| ISA (ICAO formula) | 5.5 °C | baseline |
+| Actual (your site, mean) | ~15 °C | **−3.7 hPa** |
+
+The ~3.7 hPa difference is not sensor error — it is a known, systematic consequence
+of using an aviation formula for synoptic meteorology at high elevation. The WMO
+uses the **hypsometric formula with virtual temperature (Tv)** instead, which is
+what this firmware publishes as QNH.
+
 ### Why GPS altitude → QNH is not circular
 
 GPS altitude provides the station height to normalise QFE → QNH.
@@ -622,25 +670,46 @@ Four HA entities are registered on this topic:
 
 ## Planned Hardware Upgrades
 
-### BMP388 — replaces BMP180 (owned, ready to implement)
+### BMP581 — replaces BMP180 (preferred over BMP388 — buy this instead)
 
-Clear upgrade in every measurable dimension:
+**Recommendation: skip BMP388, go straight to BMP581.** It is available now at
+[SEN0667 — DFRobot Fermion BMP581 breakout](https://www.robotics.org.za/SEN0667).
+BMP581 is Bosch's latest generation using a new **capacitive MEMS** architecture
+(all previous Bosch pressure sensors use piezoresistive). The capacitive approach
+is fundamentally less sensitive to mechanical stress and package deformation.
 
-| Spec | BMP180 | BMP388 |
-|------|--------|--------|
-| Pressure accuracy | ±1.0 hPa | ±0.5 hPa |
-| Pressure resolution | 0.01 hPa | 0.00016 hPa |
-| Noise RMS | ~0.06 hPa | ~0.009 hPa |
-| ADC | 8-bit oversampled | 24-bit |
-| Built-in IIR filter | No | Yes (order 0–127) |
-| FIFO buffer | No | Yes (512 samples) |
-| Interface | I2C only | I2C + SPI |
+| Spec | BMP180 | BMP388 | **BMP581** |
+|------|--------|--------|-----------|
+| Absolute accuracy | ±1.0 hPa | ±0.5 hPa | **±0.3 hPa** |
+| Relative accuracy | — | ±0.08 hPa | **±0.06 hPa** |
+| Noise RMS | ~0.6 Pa | ~0.9 Pa | **0.08 Pa** (~11× lower) |
+| Long-term drift | unknown | unknown | **±0.1 hPa / 12 months** |
+| TCO | high | moderate | **±0.5 Pa/K** |
+| ADC | 8-bit oversampled | 24-bit | 24-bit |
+| Built-in IIR filter | No | Yes (order 0–127) | Yes |
+| FIFO buffer | No | Yes (512 samples) | Yes |
+| Interface | I2C only | I2C + SPI | **I2C + SPI + I3C** |
+| Power @ 1 Hz | ~0.9 mA active | ~3.4 µA | **1.3 µA** |
+| Standby current | — | — | **0.5 µA** |
+| Package | TO-5 can | 2.0×2.0×0.75 mm | 2.0×2.0×0.75 mm |
 
-BMP388 becomes the **primary pressure source** for QNH and the tendency ring buffer (better accuracy, built-in IIR smoothing reduces transient pressure events from doors/HVAC). BME280 demoted to secondary pressure + authoritative humidity.
+**Why the 11× noise improvement matters at this elevation:**
+At 858 hPa station pressure, BMP388 noise of ~0.9 Pa translates to ~±0.075 m
+altitude noise per reading. BMP581 at 0.08 Pa gives ~±0.007 m — below any
+meteorological relevance. The tendency ring buffer benefits most: 10-min means
+are already smoothed, but single noisy samples from BMP388 can still contaminate
+the midpoint of the 3-hour window and flip the WMO `a` code.
 
-The IIR filter is particularly valuable for the tendency calculation — hardware smoothing before 10-min averaging reduces short-duration spikes that would otherwise corrupt the 3-hour ring buffer.
+BMP581 becomes the **primary pressure source** for QNH and the tendency ring
+buffer. BME280 demoted to secondary pressure + authoritative humidity.
 
-Driver: Bosch BMP3 API (open-source C), replaces `libs/bmp180/`. I2C address: 0x76 or 0x77 (selectable via SDO pin — set to whichever BME280 is not using).
+**References:**
+- [BMP581 datasheet (Bosch, PDF)](https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmp581-ds004.pdf) — also at `docs/datasheets/bmp581-datasheet.pdf` via `just fetch-datasheets`
+- [BMP5 Sensor API (Bosch, GitHub)](https://github.com/boschsensortec/BMP5-Sensor-API) — open-source C driver, replaces `libs/bmp180/`
+- [DFRobot SEN0667 wiki](https://wiki.dfrobot.com/SKU_SEN0667_Fermion:_BMP581_Barometric_Pressure_Sensor)
+- [Product page (robotics.org.za)](https://www.robotics.org.za/SEN0667)
+
+I2C address: 0x46 or 0x47 (SDO pin selects) — no conflict with BME280 (0x76/0x77).
 
 ### TMP117 — add as primary temperature sensor (owned)
 
@@ -698,14 +767,107 @@ Natural complement to pressure tendency: storm approach visible in both channels
 - SPI preferred over I2C for noise immunity in electrically noisy environments
 - Interrupt-driven — connect IRQ pin to a Pico GPIO with edge-detect interrupt
 
+### DS3231 RTC + Dormant-Mode Sleep
+
+**Module:** [Waveshare Pico-RTC-DS3231 (W19426)](https://www.robotics.org.za/W19426) —
+a DS3231 breakout designed to stack on the Pico. DS3231 accuracy: ±2 ppm
+(≈ ±0.17 s/day, ±1 min/year), battery-backed, I2C.
+
+**References:**
+- [DS3231 datasheet (Analog Devices, PDF)](https://www.analog.com/media/en/technical-documentation/data-sheets/ds3231.pdf) — also at `docs/datasheets/ds3231-datasheet.pdf` via `just fetch-datasheets`
+- [Waveshare Pico-RTC-DS3231 wiki](https://www.waveshare.com/wiki/Pico-RTC-DS3231)
+- [RPi Forums: DS3231 dormant wakeup example](https://github.com/ghubcoder/PicoSleepRtc)
+
+#### Goal: DS3231 alarm wakes Pico from dormant mode (SRAM retained)
+
+```
+DS3231 alarm fires → INT pin goes low → Pico GPIO edge → wake from dormant
+```
+
+No MOSFET, no hard power-off. SRAM is retained — no architecture changes to
+accumulators or ring buffers needed.
+
+#### Why dormant mode, not the current PLL_SYS-stop sleep?
+
+The RP2040 has two software sleep states:
+
+| Mode | Clocks stopped | Wake source | Sleep current | SRAM |
+|------|---------------|-------------|---------------|------|
+| Current (PLL_SYS stop) | PLL_SYS only | Internal RTC alarm (XOSC still on) | ~1.5 mA | Retained |
+| **Dormant (target)** | **All clocks incl. XOSC** | **GPIO edge (DS3231 INT)** | **~0.1–0.3 mA** | Retained |
+
+Dormant mode stops XOSC which is why an external interrupt source is needed —
+the internal RTC cannot fire without XOSC running. The DS3231 fills this role.
+
+**Battery life estimate:**
+
+| Phase | Current | Duration / 10-min window | mA·s |
+|-------|---------|--------------------------|------|
+| Sleep (current, PLL_SYS stop) | ~1.5 mA | 597 s | ~896 |
+| Sleep (dormant target) | ~0.2 mA | 597 s | ~120 |
+| Active + WiFi (unchanged) | ~30–50 mA | ~20 s | ~700 |
+| **Total (current)** | | 617 s | ~1596 → ~**11 days** |
+| **Total (dormant target)** | | 617 s | ~820 → ~**22 days** |
+
+#### Implementation with `pico_sleep`
+
+`pico_sleep` (requires TinyUSB submodules — present in the project's Nix build via
+`pkgs.pico-sdk.override { withSubmodules = true; }`) exposes dormant mode directly:
+
+```c
+#include "pico/sleep.h"
+
+// Before sleeping:
+sleep_run_from_xosc();                            // switch clocks to XOSC
+sleep_goto_dormant_until_pin(INT_PIN, true, false); // wake on DS3231 INT low edge
+
+// After wake — restore 125 MHz and re-init peripherals:
+set_sys_clock_khz(125000, true);
+global_i2c_init();
+// clear DS3231 alarm flag via I2C before next sleep
+```
+
+The DS3231 INT pin must be connected to a Pico GPIO. On wake, the DS3231 alarm
+flag must be cleared (I2C write) before re-arming; otherwise INT stays low and
+the next `sleep_goto_dormant_until_pin` returns immediately.
+
+The existing `rtc_deep_sleep()` function (which manually drives `scb_hw->scr` and
+`clocks_hw` registers as a workaround) can be replaced entirely.
+
+#### Benefits beyond power savings
+
+- **Accurate wall-clock time**: DS3231 keeps time across power cycles. The current
+  firmware resets the internal RTC to 2020-01-01 on every cycle just to count 60 s —
+  a workaround that goes away entirely.
+- **Measurement timestamps**: each 1-min hires pressure reading can carry a real
+  ISO 8601 timestamp in the MQTT payload, fixing the "10 readings arrive at the same
+  HA timestamp" problem in the history graph.
+- **Longer sleep intervals**: can sleep precisely until :00 of each minute (wall-clock
+  aligned) rather than ~60 s from an arbitrary boot time.
+
+#### Firmware changes required
+
+1. Add DS3231 driver (`libs/ds3231/`) — I2C, set alarm, read time, clear INT flag
+2. Wire DS3231 INT → a spare GPIO (e.g. GP15); configure as edge-triggered interrupt
+3. Replace `rtc_deep_sleep()` with `ds3231_dormant_sleep()`:
+   - Set DS3231 Alarm 2 for T+1 min
+   - Configure GPIO wakeup
+   - Stop XOSC + enter dormant
+   - On wake: clear alarm flag, restart clocks, re-init I2C
+4. Optionally include DS3231 timestamp in hires MQTT payload
+
+I2C address: DS3231 = 0x68 — no conflict with BMP180 (0x77), BME280 (0x76),
+INA219 (0x43 on I2C1). Can share I2C0 or I2C1.
+
 ### Planned architecture after upgrades
 
 ```
 I2C bus (shared, GP4/GP5):
-  BMP388  0x77  Primary pressure (replaces BMP180) — SDO → VDDIO
+  BMP581  0x47  Primary pressure (replaces BMP180) — SDO → VDDIO
   BME680  0x76  Secondary pressure + gas resistance (replaces BME280) — SDO → GND
   TMP117  0x48  Primary temperature (WMO Class 1, ±0.1°C)
   SHT45   0x44  Primary humidity (WMO Class 1, ±1.0% RH) + secondary temperature
+  DS3231  0x68  RTC (battery-backed, alarm wakeup) — stacks via Waveshare module
 
 AS3935:
   SPI (preferred) or I2C 0x03  Lightning distance + energy (IRQ → Pico GPIO)
@@ -715,12 +877,172 @@ Role reassignment after upgrades:
 
 | Measurement | Source (current) | Source (after) |
 |-------------|-----------------|----------------|
-| Primary pressure / QNH / tendency | BME280 | BMP388 |
+| Primary pressure / QNH / tendency | BME280 | BMP581 |
 | Primary temperature (WMO Class 1) | BME280 | TMP117 ±0.1°C |
 | Primary humidity (WMO Class 1) | BME280 | SHT45 ±1.0% RH |
 | Secondary pressure | BMP180 | BME680 |
 | Gas resistance (curiosity) | — | BME680 |
 | Lightning | — | AS3935 |
+| Timekeeping / wakeup / timestamps | internal RTC (no battery) | DS3231 (battery-backed) |
+
+---
+
+## TODO — Future Software Work
+
+### Flash wear levelling *(low priority — current design is safe)*
+
+`params_save()` always erases and re-programs the same 4 KB sector (last sector of
+2 MB flash). NOR flash endurance: **100 000 erase cycles per sector**.
+
+| Scenario | Writes/day | Days to limit |
+|----------|-----------|---------------|
+| Every GPS fetch, no guard | 144 | ~694 |
+| With change-detection guard (current) | ~0 at convergence | **Not a concern** |
+
+The change-detection guard (write only if Δalt > 0.5 m or ΔQNH > 0.1 hPa) means
+writes drop to near-zero after Kalman convergence (~16 h). No urgency.
+
+Because the RTC plan uses **software dormant sleep with SRAM retained**, accumulators
+and ring buffers never need to go to flash — so the write rate does not increase.
+Implement proper wear levelling if the sensor runs continuously for > 2 years, or
+if a hard power-off architecture is reconsidered later.
+
+### Sensor bias correction *(deferred — needs reference or third sensor)*
+
+Observed inter-sensor offsets (from `~/WEATHER_DATA/` CSV analysis):
+
+| Quantity | BMP180 vs BME280 | Direction |
+|----------|-----------------|-----------|
+| Temperature | +1.198 °C | BMP180 reads warmer (self-heating) |
+| Pressure | −1.008 hPa | BMP180 reads lower |
+
+Both are consistent (σ < 0.1 for each), but **source is unknown** — either sensor
+could be closer to truth. Options:
+
+- Wait for BMP581 (third independent pressure reading) → cross-calibrate all three.
+  The sensor closest to the median of three is most likely correct.
+- Compare QNH against nearby SAWS synoptic station during stable high-pressure days
+  (morning, no convection) → absolute reference.
+
+Until then, both sensors publish their raw (uncorrected) values.
+
+### Variance-weighted sensor fusion *(deferred — needs bias correction first)*
+
+Once systematic biases are characterised, combine BMP180 (or BMP581 replacement)
+and BME280 pressure readings into a single minimum-variance estimate:
+
+```
+P_fused = (P1/σ1² + P2/σ2²) / (1/σ1² + 1/σ2²)
+```
+
+Requires knowing individual measurement variances σ1², σ2² (not just inter-sensor
+difference). BMP581 datasheet gives noise specs; BME280 can be characterised from
+high-resolution still-air data.
+
+At that point, the fused pressure would replace both individual readings as the
+input to the tendency ring buffer and QNH calculation, while individual sensor
+readings are still published for diagnostics.
+
+---
+
+## Measurement & Processing Pipeline
+
+End-to-end flow from raw sensor reads to Home Assistant entities.
+
+```mermaid
+flowchart TD
+    subgraph hw["Hardware Inputs (1-min cycle)"]
+        GPS["🛰 GPS K-172\ngps/fr3yr/tpv\nretained MQTT"]
+        BMP["BMP180\nT · P"]
+        BME["BME280\nT · P · RH"]
+        INA["INA219 / Pico-UPS-A\nV · I · Bat%"]
+    end
+
+    subgraph raw["Raw Readings"]
+        BMP --> T_bmp["T_bmp (°C)"]
+        BMP --> P_bmp["P_bmp QFE (Pa)"]
+        BME --> T_bme["T_bme (°C)"]
+        BME --> P_bme["P_bme QFE (Pa)"]
+        BME --> RH["RH (%)"]
+        INA --> ups["V · I · Bat%"]
+    end
+
+    subgraph kalman["GPS Altitude — Kalman Filter"]
+        GPS -->|"mode=3 (3D fix) only\nreject < 1400 m"| kf["1D Kalman\nR = 125 m²  Q = 0.01 m²\nσ: 11.2 m → 1.2 m\n~100 fixes / 16.7 h"]
+        kf --> h_est["h_est — station altitude (m)\n± flash persist (Δ > 0.5 m)"]
+    end
+
+    subgraph qnh_ema["QNH Reference EMA (boot-only GPS update)"]
+        P_bmp --> icao["ICAO: P / (1 − h/44330)^5.255"]
+        h_est --> icao
+        icao --> ema["EMA  α = 0.20  ≈ 50 min\n± flash persist (Δ > 0.1 hPa)"]
+        ema --> qnh_ref["qnh_ref_pa (Pa)"]
+    end
+
+    subgraph vt["WMO SLP — Virtual Temperature Correction"]
+        T_bme --> tv["e_s = 6.1078·exp(17.27·T/(T+237.3))\ne   = (RH/100)·e_s\nTv  = T_K / (1 − e/P · 0.378)"]
+        RH --> tv
+        P_bme --> tv
+        tv --> Tv["Tv (K)"]
+        Tv --> hyp_b["Hypsometric\nP · exp(g·h / Rd·Tv)\n↳ BMP180 QNH (Pa)"]
+        Tv --> hyp_e["Hypsometric\nP · exp(g·h / Rd·Tv)\n↳ BME280 QNH (Pa)"]
+        P_bmp --> hyp_b
+        P_bme --> hyp_e
+        h_est --> hyp_b
+        h_est --> hyp_e
+    end
+
+    subgraph accum["10-min Accumulation (× 10 samples)"]
+        T_bmp --> sums["Σ T_bmp · T_bme · RH\nΣ V · I · Bat%  →  10-min means"]
+        T_bme --> sums
+        RH --> sums
+        ups --> sums
+        P_bmp --> hires["Hires ring\n10 × bmp_pa · bme_pa (hPa)"]
+        P_bme --> hires
+    end
+
+    subgraph baro["Barometric Altitude (from last sample)"]
+        P_bmp --> alt_calc["44330 · (1 − (P/QNH)^(1/5.255))"]
+        P_bme --> alt_calc
+        qnh_ref --> alt_calc
+        alt_calc --> alt_bmp["Alt BMP180 (m)"]
+        alt_calc --> alt_bme["Alt BME280 (m)"]
+    end
+
+    subgraph tend["Pressure Tendency — WMO 3-hour"]
+        P_bme --> msl_m["÷ alt_factor → 10-min mean QNH\n(ICAO, BME280 only)"]
+        h_est --> msl_m
+        msl_m --> ring["Ring buffer  19 × 10 min = 3 h\n(reset on skipped cycle)"]
+        ring --> ta["tendency_a_filtered()\nnet = newest − oldest\nWMO codes 0–8 + hyst guard"]
+        ta --> tend_out["tendency hPa/3h\ntendency_a 0–8\ntendency_a_desc (text)"]
+    end
+
+    subgraph pub["MQTT Publish (every 10 min, WiFi on)"]
+        hires -->|"10 msgs · 20 ms gap"| ht["pico/weather-aux/press_hires\nbmp_pa · bme_pa hPa"]
+        sums --> st["pico/weather-aux/state\nT̄_bmp · T̄_bme · RH̄\nP_bmp · P_bme QFE last-sample\nQNH_bmp · QNH_bme (Tv-corrected)\nAlt_bmp · Alt_bme · h_est\nV̄ · Ī · Bat̄% · tendency"]
+        hyp_b --> st
+        hyp_e --> st
+        alt_bmp --> st
+        alt_bme --> st
+        h_est --> st
+        tend_out --> st
+    end
+
+    st --> ha["Home Assistant\n18 MQTT entities\nauto-discovery"]
+    ht --> ha
+```
+
+### Key design choices summarised
+
+| Stage | Choice | Why |
+|-------|--------|-----|
+| GPS Kalman | Stationary 1D, R=125 m², Q=0.01 m² | GPS σ≈11 m; converges to σ≈1.2 m. BME280 altitude excluded — it tracks weather, not real position. |
+| QNH formula | WMO hypsometric + virtual temperature Tv | At 1458 m, actual T is +9.6°C above ISA → ~3.7 hPa difference from ICAO simplified. Tv accounts for real T and humidity. |
+| Humidity in VT | Used directly, no smoothing | σ=1.4% RH → ±0.05 hPa variance on QNH correction. Smoothing would further reduce an already negligible error. |
+| QNH EMA feedstock | ICAO formula (boot-only, from BMP180) | Consistent with barometric altitude formula; QNH EMA is a *reference*, not a reporting value. |
+| Tendency ring | ICAO MSL, BME280 only | Tendency measures *change* — ICAO vs Tv differs by a near-constant ~3.7 hPa which cancels in the subtraction. |
+| No sensor fusion | BMP180 and BME280 reported independently | Known biases: BMP180 T +1.2°C warmer, BMP180 P −1.0 hPa lower. Source unknown (both could be "wrong"). Fusion deferred until BMP388 replaces BMP180. |
+| Flash wear guard | Write only if Δalt > 0.5 m or ΔQNH > 0.1 hPa | At convergence Kalman drifts <0.1 m/update → near-zero flash writes. 100k-cycle sector limit not a concern at steady state. |
 
 ---
 
