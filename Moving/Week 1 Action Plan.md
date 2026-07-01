@@ -1,12 +1,16 @@
 # Week 1 Action Plan (1–6 July)
 
-Moving date: End of July 2026
+Moving date: **Saturday 1 August 2026** (handover same day)
 Week 1 focus: **Arrangements, decisions, and first purge passes**
 
 ---
 
 ## Weekdays (Tue 1 – Fri 4 July)
 > Planning and admin only — no physical packing needed yet.
+
+### New Place — Confirm Occupancy
+- [ ] Confirm when current occupants will be out of new place — needed before we can plan access on 1 August
+- [ ] Confirm handover time with landlord/agent on 1 August
 
 ### Movers / Logistics
 - [ ] Decide: hire movers vs self-move (friends + bakkie/truck hire)
@@ -46,7 +50,7 @@ Week 1 focus: **Arrangements, decisions, and first purge passes**
 - [ ] Buy polyfilla / wall filler + sandpaper + touch-up paint if needed (can fill holes over the coming weeks)
 
 ### Address Change Notifications (start this week)
-- [ ] Confirm new address is secured before notifying
+- [x] Confirm new address is secured before notifying ✅ 2026-07-01
 - [ ] Draft list of who needs to be notified: bank, employer HR, insurance, subscriptions, medical aids, post office
 
 ---

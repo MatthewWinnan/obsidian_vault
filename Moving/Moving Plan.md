@@ -1,13 +1,14 @@
 # Moving Plan
 
-Moving date: **End of July 2026**
+Moving date: **Saturday 1 August 2026** (handover same day)
 House: 3 bedroom, 2 bathroom
 
 ---
 
 ## Timeline Overview
 
-### 4+ Weeks Before (Now → Week of 7 July)
+### Week 1 — 4 Weeks Out (1 July → 6 July)
+- [ ] Confirm when current occupants vacate new place
 - [ ] Decide: hire movers vs self-move (get 2–3 quotes if hiring)
 - [ ] Set moving budget
 - [ ] Collect packing supplies — boxes, tape, bubble wrap, markers, labels, furniture pads
@@ -15,38 +16,40 @@ House: 3 bedroom, 2 bathroom
 - [ ] Start a "purge pass" — go room by room and decide: keep / donate / sell / trash
 - [ ] List large items that need special handling (TVs, appliances, furniture)
 - [ ] Notify: employer, bank, insurance, subscriptions, Home Affairs / post office (address change)
+- See [[Moving/Week 1 Action Plan|Week 1 Action Plan]] for full detail
 
-### 3 Weeks Before (7 July → 14 July)
+### Week 2 — 3 Weeks Out (7 July → 13 July)
 - [ ] Begin packing non-essential / rarely used rooms first (see room order below)
 - [ ] Sort and label all boxes: **Room | Contents | Fragile?**
 - [ ] Take photos of all cable setups (TV, PC, home lab, etc.) before disassembly
 - [ ] Arrange utility connections at new place (internet, electricity)
 - [ ] Arrange utility disconnections / transfer at current place
 
-### 2 Weeks Before (14 July → 21 July)
+### Week 3 — 2 Weeks Out (14 July → 20 July)
 - [ ] Pack secondary bedrooms
 - [ ] Pack garage / storage areas
 - [ ] Pack non-daily-use kitchen items
 - [ ] Confirm move date/time with movers or helpers
 - [ ] Start consuming/clearing fridge and freezer contents
 
-### 1 Week Before (21 July → 28 July)
+### Week 4 — 1 Week Out (21 July → 27 July)
 - [ ] Pack main bedroom (keep 3–4 days of clothes aside)
 - [ ] Pack bathrooms (keep toiletries kit aside)
 - [ ] Pack remaining kitchen — leave out 1 pot, 1 pan, basic cutlery
 - [ ] Disassemble furniture that needs it — bag all screws/bolts and tape to the piece
-- [ ] Defrost freezer/fridge 24 hours before move
-- [ ] Confirm arrival time with movers
+- [ ] Re-hang all blinds and replace all removed fixtures
+- [ ] Fill all holes, sand and touch up paint
 
-### Day Before
-- [ ] Pack "First Night Box" (see below)
-- [ ] Do a full walkthrough — inside cupboards, under beds, loft/attic
-- [ ] Charge all devices
+### Final Push (Thu 30 – Fri 31 July) — Take These Days Off
+- [ ] Thursday 30: final packing, wall touch-ups, blinds and fixtures done
+- [ ] Friday 31: defrost fridge and deep freeze, final walkthrough, pack First Night Box, confirm movers
 
-### Moving Day
+### Moving Day — Saturday 1 August
 - [ ] Walk movers through the house and label system
 - [ ] Keep First Night Box with you (not on the truck)
+- [ ] Cat in safe room until everything is loaded
 - [ ] Do final walkthrough before handing over keys — check every room, cupboard, outside
+- [ ] Hand over keys
 
 ---
 
@@ -349,13 +352,13 @@ Pack a clearly labelled box / bag that rides with you, not the truck:
 
 **Yes — strongly recommended.** Here's a suggested approach:
 
-- **Thursday 24 July** — Take off: final push packing, touch up walls/holes, re-hang blinds and fixtures
-- **Friday 25 July** — Take off: defrost fridge and deep freeze, clean both, final walkthrough of every room, pack First Night Box, confirm movers
-- **Monday 28 July (moving day)** — Already off to supervise the move
+- **Thursday 30 July** — Take off: final packing push, touch up walls/holes, re-hang blinds and fixtures
+- **Friday 31 July** — Take off: defrost fridge and deep freeze, clean both, final walkthrough of every room, pack First Night Box, confirm movers
+- **Saturday 1 August** — Moving day and handover
 
-This gives you a 4-day block (Thu–Sun) before moving day to close everything out without panic. Trying to finish packing on weekends only and then move on a workday is the most common source of moving-day stress.
+This gives you Thu–Fri to close everything out calmly before the Saturday move. Trying to finish on weekends only and scrambling on the day is the most common source of moving stress.
 
-> If you can only take 1 day: take the Friday before moving day.
+> If you can only take 1 day: take Friday 31 July.
 
 ---
 
