@@ -55,15 +55,38 @@ House: 3 bedroom, 2 bathroom
 1. Garage
 2. Outside Porch
 3. Spare bedroom / guest room
-4. Study / hobby room
+4. Study / Home Lab
 5. Living room / lounge
-6. Main bedroom
-7. Kitchen
-8. Bathrooms
+6. Main Gaming Area
+7. Main bedroom
+8. Kitchen
+9. Bathrooms
 
 ---
 
 ## Room-by-Room Breakdown
+
+### Main Gaming Area
+**Computers / Tech:**
+- [ ] Photograph all cable setups (PC rear, monitors, peripherals) before touching anything
+- [ ] Shut down cleanly, disconnect and label all cables
+- [ ] PC towers — wrap in moving blanket, transport upright, keep away from heavy items
+- [ ] Monitors — wrap screens in bubble wrap or moving blanket, transport upright never flat, original boxes ideal
+- [ ] Peripherals (keyboards, mice, headsets, controllers) — bundle cables per device with zip-ties or velcro, pack together in a labelled box
+
+**Furniture:**
+- [ ] Desks — measure against new room/doorways, disassemble if needed, bag all hardware
+- [ ] Cat post — comes with us, wrap base to protect flooring
+
+**Shelf:**
+- [ ] LEGOs — if built sets, wrap individually in bubble wrap or cling wrap to hold pieces, pack in sturdy boxes, mark FRAGILE / THIS SIDE UP
+- [ ] If loose/unbuilt sets, keep in original boxes or zip-lock bags labelled per set
+
+**General:**
+- [ ] This is a high-value room — pack PCs and monitors yourself rather than leaving to movers
+- [ ] Consider transporting PCs and monitors in your own car
+
+---
 
 ### Main Bedroom
 **Furniture (coming with us):**
@@ -295,6 +318,44 @@ Pack a clearly labelled box / bag that rides with you, not the truck:
 - [ ] Bin bags (large, for clothing on hangers)
 - [ ] Stretch wrap / plastic wrap (for drawers, furniture)
 - [ ] Box cutter
+
+---
+
+## Pets (Cat)
+
+> Moving is stressful for cats — plan around them deliberately.
+
+**Before moving day:**
+- [ ] Keep cat's routine as normal as possible during packing weeks
+- [ ] Set up a "safe room" on moving day — one room that gets packed last and stays calm (e.g. bathroom)
+- [ ] Ensure cat carrier is accessible and familiar — leave it out in the weeks before so the cat is comfortable with it
+- [ ] Stock up on cat food, litter, and supplies to last through moving week
+
+**Moving day:**
+- [ ] Confine cat to the safe room with food, water, litter, and familiar bedding — keep the door closed and inform movers
+- [ ] Put a note on the door so movers don't open it
+- [ ] Transport cat in carrier in your car — not the moving truck
+- [ ] Bring cat food, water bowl, litter tray, and a familiar blanket/toy in the car
+
+**At the new place:**
+- [ ] Set up one room first for the cat before letting them explore — familiar smells help settle them
+- [ ] Keep cat indoors for at least 2–4 weeks while they adjust to the new environment
+- [ ] Update vet records with new address
+- [ ] If cat is microchipped, update address on the microchip registry
+
+---
+
+## Should You Take Days Off?
+
+**Yes — strongly recommended.** Here's a suggested approach:
+
+- **Thursday 24 July** — Take off: final push packing, touch up walls/holes, re-hang blinds and fixtures
+- **Friday 25 July** — Take off: defrost fridge and deep freeze, clean both, final walkthrough of every room, pack First Night Box, confirm movers
+- **Monday 28 July (moving day)** — Already off to supervise the move
+
+This gives you a 4-day block (Thu–Sun) before moving day to close everything out without panic. Trying to finish packing on weekends only and then move on a workday is the most common source of moving-day stress.
+
+> If you can only take 1 day: take the Friday before moving day.
 
 ---
 
