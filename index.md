@@ -35,6 +35,9 @@ Currently the topics include #HomeLabSetup and #PCBuild. The latter focuses on r
 ### Rust
 - [[Rust/Introduction|Learning Rust]]
 
+### Moving
+- [[Moving/Moving Plan|Moving Plan]]
+
 ### Other
 - [[Interesting Finds/Introduction|Interesting Finds]]
 - [[TODO]]
