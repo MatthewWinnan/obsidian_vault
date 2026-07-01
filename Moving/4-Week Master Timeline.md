@@ -32,6 +32,8 @@ Today: 1 July 2026 — 31 days out
 ## Week 2 — 7 to 13 July | 3 Weeks Out
 **Theme: Early disassembly + start packing non-essential areas**
 
+See [[Moving/Week 2 Action Plan|Week 2 Action Plan]] for full detail.
+
 ### Weekdays (Mon 7 – Fri 11)
 - [ ] Confirm mover booking if not locked in
 - [ ] Arrange ISP reconnection at new address — confirm date (aim for 1 Aug or earlier)
