@@ -53,6 +53,8 @@ See [[Moving/Week 2 Action Plan|Week 2 Action Plan]] for full detail.
 ## Week 3 — 14 to 20 July | 2 Weeks Out
 **Theme: Main packing push across living areas and study**
 
+See [[Moving/Week 3 Action Plan|Week 3 Action Plan]] for full detail.
+
 ### Weekdays (Mon 14 – Fri 18)
 - [ ] Coordinate remaining buyer collections (fans, braai, porch bed, light, soda machine — chase anyone who hasn't collected)
 - [ ] Intentionally start eating down fridge, freezer, and pantry contents — plan meals around what's there
