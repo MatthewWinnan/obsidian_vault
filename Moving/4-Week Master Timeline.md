@@ -94,6 +94,8 @@ See [[Moving/Week 4 Action Plan|Week 4 Action Plan]] for full detail.
 ## Final Push — Thu 30 & Fri 31 July (Take These Days Off)
 **Theme: Close everything out, prep for the day**
 
+See [[Moving/Final Push - 30 & 31 July|Final Push Action Plan]] for full detail.
+
 ### Thursday 30 July
 - [ ] Pack all remaining kitchen items — only "last morning kit" stays out (kettle, 2 mugs, coffee/tea, spoon)
 - [ ] Pack both bathrooms — keep one toiletry bag per person accessible
