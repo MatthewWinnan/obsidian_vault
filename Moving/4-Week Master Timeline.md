@@ -73,6 +73,8 @@ See [[Moving/Week 3 Action Plan|Week 3 Action Plan]] for full detail.
 ## Week 4 — 21 to 27 July | 1 Week Out
 **Theme: Final packing, house restoration, furniture prep**
 
+See [[Moving/Week 4 Action Plan|Week 4 Action Plan]] for full detail.
+
 ### Weekdays (Mon 21 – Fri 25)
 - [ ] Clear out remaining fridge and freezer — donate, give away, or consume everything perishable
 - [ ] Buy polyfilla touch-up paint if not already done
