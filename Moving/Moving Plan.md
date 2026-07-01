@@ -140,11 +140,17 @@ House: 3 bedroom, 2 bathroom
 ### Study / Home Lab
 > This is the most complex room — plan extra time and do it methodically.
 
-**Critical: Network / Fibre**
-- [ ] Main router and fibre ONT route through here — disconnect LAST on moving day
+**Network / Fibre — Do Early (Week 2)**
+- [ ] Unmount router and switch from table early — place on floor or shelf to free up the table for moving, keep everything plugged in and running
+- [ ] Remove ethernet trunking from walls around the house early — can live with exposed cables for a few weeks, no rush to tidy
 - [ ] Photograph all cable runs and port assignments before touching anything
+- [ ] Router, switch, ONT, and all patch cables — pack together in a clearly labelled bag/box on moving day, transport in your car not the truck
 - [ ] Arrange ISP reconnection at new address before or on moving day
-- [ ] Keep router, ONT, and patch cables together in a clearly labelled bag/box — these go in the car, not the truck
+
+**Home Assistant — Disassemble Early (Week 2)**
+- [ ] Home Assistant setup can come down early — stability testing will restart fresh at the new place
+- [ ] Shut down cleanly, pack HA hardware (SBC, SD card, power supply) together in a labelled bag
+- [ ] No need to keep it running during the move
 
 **Electronics Cupboard (3 shelves)**
 - [ ] Do a purge pass first — bin broken parts, donate unused gear
