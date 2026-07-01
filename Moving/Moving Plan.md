@@ -326,25 +326,40 @@ Pack a clearly labelled box / bag that rides with you, not the truck:
 
 ## Pets (Cat)
 
-> Moving is stressful for cats — plan around them deliberately.
+> Cats are highly territorial and stress easily during moves. Plan around them deliberately — the steps below make a significant difference.
 
-**Before moving day:**
-- [ ] Keep cat's routine as normal as possible during packing weeks
-- [ ] Set up a "safe room" on moving day — one room that gets packed last and stays calm (e.g. bathroom)
-- [ ] Ensure cat carrier is accessible and familiar — leave it out in the weeks before so the cat is comfortable with it
+### Weeks Before (Start Now)
+- [ ] Leave the cat carrier out in a familiar spot so the cat gets comfortable with it — put a blanket or toy inside
+- [ ] Consider buying a **Feliway diffuser** — plug it in now at home to start calming effect, then move it to the new place a week before/after move
+- [ ] Keep furniture in place as long as possible — rearranging the home stresses cats before you've even moved
+- [ ] Maintain feeding schedule and litter box location throughout packing weeks
 - [ ] Stock up on cat food, litter, and supplies to last through moving week
+- [ ] Fit cat with an **ID collar** with your new address on it before moving day (in case of escape)
+- [ ] Update microchip registry with new address
 
-**Moving day:**
-- [ ] Confine cat to the safe room with food, water, litter, and familiar bedding — keep the door closed and inform movers
-- [ ] Put a note on the door so movers don't open it
-- [ ] Transport cat in carrier in your car — not the moving truck
-- [ ] Bring cat food, water bowl, litter tray, and a familiar blanket/toy in the car
+### Moving Day
+- [ ] Designate a **safe room** (e.g. bathroom or spare room) — set it up with: carrier, bed, familiar blanket, food, water, litter tray, and scratching post
+- [ ] Confine cat to safe room before movers arrive and before any doors are left open
+- [ ] Put a clear note on the door: **"Cat inside — do not open"**
+- [ ] Do not feed cat 2–3 hours before travel to prevent travel sickness
+- [ ] Once everything is loaded, place cat in carrier and transport in your **own car** — never the moving truck
+- [ ] Cover the carrier with a light blanket to reduce visual stress during the journey
+- [ ] Bring in the car: food, water bowl, litter tray, familiar blanket/toy
 
-**At the new place:**
-- [ ] Set up one room first for the cat before letting them explore — familiar smells help settle them
-- [ ] Keep cat indoors for at least 2–4 weeks while they adjust to the new environment
+### At the New Place
+- [ ] Set up a **safe room first** before letting the cat out of the carrier — same setup as the safe room at the old place (familiar smells are key)
+- [ ] Place the carrier in the safe room next to a hiding spot and open it — let the cat come out in their own time, don't force it
+- [ ] Keep the cat in this one room for the first 1–2 days while you unpack and settle
+- [ ] Gradually open up one room at a time over the following days as the cat grows confident
+- [ ] **Scent technique**: rub a soft cloth gently around the cat's cheeks and head, then rub the cloth on doorframes, walls, and furniture at cat height around the new home — spreads their scent and makes the space feel safe
+- [ ] Keep all windows, doors, and screens closed and secure for the first few weeks
+
+### Settling In (Weeks After)
+- [ ] Keep cat **fully indoors for at least 3 weeks** — this is when cats are most likely to bolt back to the old address
+- [ ] Stick to the same feeding schedule, same food, same litter brand — don't change anything else while they adjust
+- [ ] Give extra attention, play, and treats to build positive associations with the new home
+- [ ] After 3+ weeks, if the cat seems settled, begin supervised outdoor access
 - [ ] Update vet records with new address
-- [ ] If cat is microchipped, update address on the microchip registry
 
 ---
 
