@@ -5,7 +5,7 @@ Week 1 focus: **Arrangements, decisions, and first purge passes**
 
 ---
 
-## Weekdays (Tue 1 – Fri 4 July)
+## Weekdays (Thursday 2 – Wednesday 8 July)
 > Planning and admin only — no physical packing needed yet.
 
 ### New Place — Confirm Occupancy
@@ -55,7 +55,7 @@ Week 1 focus: **Arrangements, decisions, and first purge passes**
 
 ---
 
-## Weekend (Sat 5 – Sun 6 July)
+## Weekend (Sat 4 – Sun 5 July)
 > First physical tasks — focus on areas that don't disrupt daily life.
 
 ### Saturday — Garage + Porch Purge
