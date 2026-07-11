@@ -8,19 +8,39 @@ Week 2 focus: **Early disassembly + start packing non-essential areas**
 ## Weekdays (Mon 7 – Fri 11 July)
 > Planning, admin, and chasing loose ends from week 1.
 
-### Carry Over from Week 1 (if not done)
-- [ ] Confirm when current occupants vacate new place
-- [ ] Mover booked and confirmed
-- [ ] ISP reconnection arranged
-- [ ] Sale listings posted for fans, braai, porch bed, standing light, soda machine
+### Completed Early in Week 1 (no action needed)
+- [x] ISP reconnection arranged
+- [x] Utilities notified
+- [x] Rental agency notified — coordinating handover with new tenants
+- [x] Moving window confirmed: 31 July – 1 August
 
-### Movers
-- [ ] If quotes received last week — make a final decision and book, get confirmation in writing
-- [ ] Confirm access details for new address on 1 August (parking, elevator, gate codes etc.)
+### Carry Over from Week 1 (still needed)
+- [x] Mover booked — deposit paid 11 July; written confirmation expected next week
+- [x] Braai — sold
+- [x] Fans ×3 — taken care of
+- [ ] Sale listings: porch bed, standing light, soda machine — still outstanding
+
+### Movers — Priority This Week
+- [ ] Contact at least 2–3 moving companies Monday/Tuesday for quotes
+- [ ] Have ready when calling:
+  - Current address + new address
+  - Moving date: 31 July – 1 August
+  - House size: 3 bed, 2 bath
+  - Access notes for new place (parking, stairs, gate codes etc.)
+  - Large/heavy items to flag: king bed, deep freeze, tumble dryer, dishwasher, fridge, couch set, desks
+- [ ] Compare quotes and make a decision by end of week
+- [ ] Book and get confirmation in writing
+- [ ] Confirm access details for new address (parking, gate codes etc.)
+
+### ISP
+- [x] Reconnection arranged — ISP organizing their end with the infrastructure provider
+- [ ] Follow up next week to get a confirmed connection date on or before 31 July
 
 ### Utilities
-- [ ] Follow up ISP if not yet confirmed — push for a connection date on or before 1 August
-- [ ] Confirm electricity and water transfer/new account at new address
+- [x] Cancellation at current address started — awaiting mom's signature (she is a mutual account holder)
+- [ ] Chase mom's signature this week to complete the cancellation
+- [ ] Signing transfer contract Monday 13 July — this should clarify how utilities at the new address are handled
+- [ ] Once transfer contract is signed, confirm electricity and water setup at new address
 
 ### Sales — Coordinate Collections
 - [ ] Follow up on any sale listings with interested buyers — arrange collection times
@@ -32,69 +52,78 @@ Week 2 focus: **Early disassembly + start packing non-essential areas**
 - [ ] Post office / Home Affairs redirect — arrange this week if possible
 
 ### Cat
-- [ ] Buy Feliway diffuser if not already done — plug in now
-- [ ] Carrier should be out and accessible — check cat is comfortable going near/into it
+- [ ] Feliway diffuser — not found in stores, try ordering online or a different pet store
+- [x] Carrier is out and accessible
 
 ---
 
 ## Weekend (Sat 12 – Sun 13 July)
-> First real packing weekend — focus on study and spare room. These rooms have the least daily impact once cleared.
+> Garage and porch purge moved here from Week 1. Study trunking and purge already done — focus shifts to packing and the outdoor areas.
 
-### Saturday — Study: Network + Home Assistant + Electronics
+### Saturday 11 July — Actual Outcome (ahead of schedule)
 
-**Start here — photograph everything before touching a single cable.**
+#### Garage — DONE
+- [x] Purge complete — junk removed, usable boxes sorted
+- [x] Tools and non-essentials boxed and labelled
+- [x] Packed boxes from inside the house moved to garage for staging
+- [x] Deep freeze and tumble dryer area cleared
 
-#### Network (do first, takes longest to settle)
-- [ ] Photograph all cable runs, port assignments on router and switch, ONT connections
-- [ ] Remove all ethernet trunking from walls room by room — cables can hang loose, that's fine
-- [ ] Unmount router and switch from table — place on floor or a cleared shelf nearby
-- [ ] Confirm internet is still working after repositioning before moving on
-- [ ] Label all patch cables per port if not already labelled
+#### Study / Hobby Room — Mostly Done
+- [x] All electronics unplugged and mostly packed
+- [ ] Cables — finish packing (Sun 12)
 
-#### Home Assistant
-- [ ] Shut down Home Assistant cleanly via the UI before powering off
-- [ ] Disassemble — unplug all cables, remove from any mount
-- [ ] Pack HA hardware (SBC/NUC, power supply, SD card/SSD) together in a zip-lock or small box, label clearly: "Home Assistant — handle with care"
-- [ ] Pack any HA accessories (Zigbee/Z-Wave sticks, USB hubs) in the same box
+#### Spare Room — Mostly Done
+- [x] Cupboard spaces cleared
+- [x] Most items packed
+- [ ] A few remaining bags to finish (Sun 12)
 
-#### Electronics Cupboard (3 shelves)
-- [ ] Photograph shelf layout before clearing anything
-- [ ] Purge pass — broken parts, unused components, things untouched in over a year → donate or bin
-- [ ] Pack shelf by shelf into labelled boxes: "Study — Electronics — Shelf 1 / 2 / 3"
-- [ ] Small loose components (resistors, caps, modules) — sort into zip-lock bags, label contents, pack into one consolidated box
+#### Porch Purge — Still To Do
+- [ ] Move porch bed to a visible spot for buyer collection
+- [ ] Clean chair and table set, bin loose junk
 
-### Sunday — Spare Room + Garage Boxing
+### Sunday 12 July
 
-#### Spare Room
-- [ ] Finish clearing and packing the cupboard:
-  - Towels and blankets — set aside a good pile to use as padding for fragile items in other rooms, box the rest
-  - Linen — box up, label clearly
-  - Remaining loose items — purge pass, donate or bin anything not worth moving
-- [ ] Confirm Funkos (already boxed) are sealed and stacked safely — label outer boxes if not done
-- [ ] Check book chest — if too heavy to carry as-is, transfer books into smaller boxes and move the chest empty
-- [ ] Loose shelf — disassemble, wrap boards together, bag brackets and screws
-- [ ] Old monitor — wrap screen in bubble wrap or blanket, pack upright, label FRAGILE
-- [ ] Plushies — pack in large bags or spare boxes
-- [ ] Blinds — confirm still accessible in the cupboard, do not pack over them
+#### Study — Finish
+- [ ] Pack all remaining cables (bundle per device, label clearly)
+- [ ] Photograph cable runs, port assignments on router and switch, ONT connections
+- [ ] Unmount router and switch from table — place on floor or cleared shelf, confirm internet stays up
+- [ ] Label all patch cables per port
+- [ ] Shut down Home Assistant cleanly via UI, disassemble, pack with Zigbee/Z-Wave sticks in a labelled bag: "Home Assistant — handle with care"
+- [ ] Finish any remaining electronics cupboard boxes
 
-#### Garage
-- [ ] Now that the purge is done, start boxing remaining items:
-  - Tools into small/medium boxes — wrap sharp items
-  - Label all boxes: "Garage — Tools", "Garage — General" etc.
-- [ ] Deep freeze and tumble dryer — stay in place for now, just ensure the area around them is clear for moving day access
+#### Spare Room — Finish
+- [ ] Pack the remaining bags
+- [ ] Confirm blinds are accessible in the cupboard, do not pack over them
+
+#### Main Bedroom — Start (Week 3 content moved early)
+- [ ] **His side of closet** — finish purge, pack out-of-season/rarely worn clothes into boxes or bin bags
+- [ ] **Dressing table** — purge each drawer, pack contents into labelled boxes ("Dressing Table — Drawer 1" etc.)
+- [ ] **Side tables** — empty both, wrap, set aside
+
+#### Books — Start (Week 3 content moved early)
+- [ ] Pack books into small boxes only — they get very heavy, do not overfill
+- [ ] Label clearly with contents and room
+
+#### Garage — Start Boxing (if time allows)
+- [ ] Deep freeze and tumble dryer — stay in place, just ensure area around them is clear
 
 ---
 
 ## End of Week 2 Goals
-By Sunday evening you should have:
-- [ ] Mover confirmed and booked in writing
-- [ ] ISP connection at new place confirmed
-- [ ] Ethernet trunking removed, router/switch unmounted and running on floor
+By Sunday 12 July evening you should have:
+- [x] Mover booked — deposit paid, confirmation next week
+- [x] Garage purged and boxed, appliances clear
+- [x] Braai sold, fans taken care of
+- [ ] Porch purged — porch bed visible for buyer collection
+- [ ] Router/switch unmounted and running on floor
 - [ ] Home Assistant packed and labelled
-- [ ] Study electronics cupboard fully packed
-- [ ] Spare room fully packed
-- [ ] Garage boxed up and clear around the appliances
-- [ ] At least some sale items collected or arrangements made
+- [ ] Study fully packed (cables done)
+- [ ] Spare room fully packed (bags done)
+- [ ] His side of bedroom closet purged, out-of-season clothes packed
+- [ ] Dressing table packed
+- [ ] Side tables emptied and wrapped
+- [ ] Books: first boxes packed
+- [ ] Porch bed, standing light, soda machine — listed for sale or arrangements made
 
 ---
 

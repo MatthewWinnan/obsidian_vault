@@ -1,7 +1,11 @@
 # Week 3 Action Plan (14–20 July)
 
-Moving date: **Saturday 1 August 2026** (handover same day)
-Week 3 focus: **Main packing push — living areas, gaming, remaining study, and main bedroom start**
+Moving date: **Friday 31 July 2026** — must vacate by 12:00 on Saturday 1 August
+Week 3 focus: **Main packing push — living areas, gaming, remaining study, and main bedroom**
+
+> Several Week 3 items were completed early in Week 2 weekend (11–12 July):
+> study packing, spare room, bedroom side tables, dressing table, and books have a head start.
+> This weekend's priority concerns: **board games, LEGOs, and the PC/desk area surroundings**.
 
 ---
 
@@ -9,9 +13,12 @@ Week 3 focus: **Main packing push — living areas, gaming, remaining study, and
 > Admin, sales follow-up, and intentional food management.
 
 ### Sales — Final Push
-- [ ] Chase all outstanding sale items — standing light, soda machine
-- [ ] Any items still unsold: drop price significantly or list as free — getting rid of them now is worth more than the money
-- [ ] Arrange final collection times this week so items are gone before the weekend
+- [x] Fans ×3 — done
+- [x] Braai — sold
+- [ ] Porch bed — list/chase buyer, arrange collection
+- [ ] Standing light — list/chase buyer, drop price or give away
+- [ ] Soda machine — list/chase buyer, drop price or give away
+- [ ] Any items still unsold by midweek: list as free — getting rid of them matters more than the money now
 
 ### Curtains — Urgent
 - [ ] Call ChemDry to schedule curtain cleaning (Tel: 012 663 8531 / 082 372 4999) — needs to be done and dry well before inspection on 1 August
@@ -60,49 +67,49 @@ Week 3 focus: **Main packing push — living areas, gaming, remaining study, and
 ## Weekend (Sat 19 – Sun 20 July)
 > Biggest packing weekend — living room, gaming area, study finishing touches, and main bedroom start.
 
-### Saturday — Living Room + Gaming Area
+### Saturday — Living Room
 
 #### Living Room
-- [ ] **Board games first** — pack all games upright, padded between each game with packing paper or linen, do not stack flat, mark boxes FRAGILE / THIS SIDE UP
-- [ ] **Books** — pack into small boxes only (they get very heavy), do not overfill
+- [ ] **Board games first** ⚠️ — pack all games upright, padded between each game with packing paper or linen, do not stack flat, mark boxes FRAGILE / THIS SIDE UP
+- [ ] **Books** — pack into small boxes only (they get very heavy), do not overfill (continuing from Week 2 weekend)
 - [ ] **Bookcases** — once emptied, disassemble both, wrap shelving boards together, bag all screws and brackets per unit, label hardware bags and tape to the relevant boards
 - [ ] **TV** — photograph the current cable setup behind the TV, wrap screen in moving blanket or bubble wrap, pack upright — set aside to transport in your car on moving day if possible
 - [ ] **TV stand** — empty completely, disassemble if possible, bag all hardware
 - [ ] **Couch set** — wrap each section in moving blankets, check if legs detach (remove and bag if so), leave in place until moving day but prepped and wrapped
 - [ ] **Cat feeding table** — clean, disassemble or wrap, box or set aside
-- [ ] **Decor / picture frames** — wrap each individually in bubble wrap or packing paper, label FRAGILE
-
-#### Gaming Area
-- [ ] **Photograph all cable setups** at both PCs before touching anything
-- [ ] **Peripherals** — pack keyboards, mice, headsets, controllers, webcams; bundle cables per device with velcro ties or zip-ties; pack together in a clearly labelled box
-- [ ] **Monitors** — wrap each screen in bubble wrap then a moving blanket, pack upright, label FRAGILE — set aside to go in your car on moving day
-- [ ] **Cat post** — wrap base to protect flooring, set aside (awkward shape, keep accessible for moving day)
-- [ ] **LEGOs** — built sets: wrap each individually in cling wrap to hold pieces in place, pack in sturdy boxes with padding, label FRAGILE / THIS SIDE UP; unbuilt/loose sets: keep in original boxes or labelled zip-lock bags
-- [ ] **Shelf** — empty and disassemble, wrap boards, bag hardware
-- [ ] **PCs** — do not pack yet, leave running; will pack on final push days (Thu/Fri 30–31 July)
-- [ ] **Desks** — leave in place for now, PCs still need them; plan to disassemble weekend of week 4
+- [x] **Decor / picture frames** — done
 
 ### Sunday — Study Remaining + Main Bedroom Start + Hole Filling
 
 #### Study — Remaining Items
-- [ ] **3D printer** — check your printer model's documentation for transport prep; generally: remove print bed, secure gantry and extruder head, remove any loose parts; wrap printer carefully and box
-- [ ] **Filament shelf** — seal all open spools in zip-lock or vacuum bags to prevent moisture damage, pack spools on-edge not stacked flat, label box: "Study — Filament — KEEP DRY"
-- [ ] **Raspberry Pi + LattePanda Delta** — shut down cleanly, pack each SBC with its own power supply and any SD cards in a padded labelled bag
-- [ ] **Soldering station and irons** — allow to cool fully, wrap iron tips individually, pack solder and accessories together, label "Study — Soldering"
-- [ ] **Remaining bookcase items** — pack books into small boxes, electronics components into organiser trays wrapped in cling wrap to keep contents in place
+> Study was mostly packed in Week 2 weekend. Verify what's left before spending time here.
+- [ ] **3D printer** — remove print bed, secure gantry and extruder head, wrap carefully and box
+- [x] **Filament shelf** — open spools sealed in zip-lock bags, done
+- [x] **Raspberry Pi + LattePanda Delta** — packed with power supplies and SD cards
+- [x] **Soldering station and irons** — done
+- [ ] **Any remaining cables or loose items** — if not finished in Week 2 weekend
 
-#### Main Bedroom — Start
-- [ ] **Out-of-season clothes** — pack now, label clearly, these won't be needed before moving day
+#### Main Bedroom
+> Dressing table, side tables, and bedroom closet (his side) are being started in Week 2 weekend — check progress before duplicating work.
+- [x] **Out-of-season clothes / her side of closet** — done
 - [ ] **Out-of-season shoes** — box up, label
-- [ ] **Dressing table drawers** — empty each drawer, purge pass (good time to discard), pack contents into labelled boxes ("Dressing Table — Drawer 1" etc.), cling-wrap drawers shut if transporting in place
-- [ ] **Side tables** — empty both, wrap, set aside — small so easy to stack with other items
+- [ ] **Dressing table drawers** — *started Week 2 weekend* — finish any remaining drawers, cling-wrap shut if transporting in place
+- [ ] **Side tables** — *started Week 2 weekend* — confirm emptied, wrapped, and set aside
 
-#### House Restoration — Start Filling Holes
-- [ ] Any room that is now mostly cleared: go around and fill all holes with polyfilla
-- [ ] Priority rooms this weekend: spare room, study, living room (once packed)
-- [ ] Apply filler, let dry overnight, sand smooth Monday morning before work if needed
-- [ ] Keep a note of which rooms still need doing
-- [ ] Do NOT paint yet — all painting deferred to day off Thursday 30 July (one big pass after all filling is complete)
+#### Kitchen — Non-Essentials (start here, Week 4 Saturday is fragiles only)
+> Air fryer stays out — still in daily use.
+- [ ] **Pressure cooker** — remove insert and seal, pack separately, box
+- [ ] **Toaster** — shake out crumbs, wrap and box
+- [ ] **Snackwich maker** — clean plates, wrap and box
+- [ ] **Microwave** — secure door with tape, wrap in moving blanket
+- [ ] **Coffee machine and any other gadgets** — wrap and box
+- [ ] **Pantry dry goods** — seal all open packets in zip-lock bags before boxing, pack in medium boxes
+- [ ] **Tupperware** — nest containers, lids in a zip-lock bag inside the same box
+
+#### House Restoration — Holes Already Done
+> All holes were filled and painted during Week 1 weekend. No action needed here.
+- [x] All holes filled, sanded, and painted *(completed Week 1)*
+- [ ] Quick walkthrough to confirm no new holes appeared during packing — patch any minor ones
 
 ---
 
@@ -110,11 +117,11 @@ Week 3 focus: **Main packing push — living areas, gaming, remaining study, and
 By Sunday evening you should have:
 - [ ] All sale items gone or actively being collected
 - [ ] Living room fully packed (except couch and TV — prepped but in place)
-- [ ] Gaming area fully packed (except PCs and desks)
 - [ ] Study fully packed
-- [ ] Main bedroom out-of-season clothes and dressing table done
-- [ ] Hole filling started in cleared rooms
+- [ ] Kitchen non-essentials boxed (pressure cooker, toaster, snackwich, microwave, coffee machine, pantry, tupperware)
+- [ ] Main bedroom dressing table and side tables done, out-of-season shoes boxed
 - [ ] Food consumption well underway — fridge and freezer visibly lighter
+- [ ] **Fridge on track to be clear by Mon/Tue 28 July** so it can be unplugged night of 29 July
 
 ---
 

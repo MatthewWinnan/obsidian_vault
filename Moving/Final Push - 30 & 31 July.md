@@ -63,8 +63,8 @@ Go room by room and check every single space:
 - [ ] Walk every wall in every room — fill ALL remaining holes with polyfilla
 - [ ] Check behind where furniture was — often hidden holes or marks
 - [ ] Leave filler to dry overnight — painting happens tomorrow (Thursday)
-- [ ] All blinds re-hung in correct rooms — pull each one up and down to confirm working
 - [ ] All fixtures reattached — hooks, rails, towel bars, toilet roll holders, brackets
+- [ ] Confirm blinds and curtains are packed in spare room
 
 #### Cat Setup
 - [ ] Choose the safe room for moving day (e.g. bathroom or spare room)
@@ -76,8 +76,9 @@ Go room by room and check every single space:
 - [ ] Stack all packed boxes in their respective rooms or in the garage/entrance hall for easy loading
 - [ ] Confirm all furniture that needs disassembly is disassembled
 - [ ] Charge all devices overnight — phones, laptops, power banks
-- [ ] Eat down whatever is left in the fridge for dinner — clear it as much as possible
-- [ ] **Unplug the fridge and deep freeze tonight** — doors open, towels on the floor to catch water — they need the full night to defrost
+- [ ] Eat down whatever is left in the fridge for dinner
+- [ ] **Unplug the fridge tonight** — door open, towels on the floor to catch water, let it defrost overnight
+- [ ] **Unplug the deep freeze and move it outside tonight** — lid/door open to defrost overnight; drains naturally outside, no indoor mess, and already in position for movers to load directly
 - [ ] Filler should be dry by now — confirm all patches are hard and ready for sanding/painting tomorrow
 
 ---
@@ -95,7 +96,7 @@ Go room by room and check every single space:
 
 #### Defrost + Clean Appliances
 - [ ] Fridge — mop up all water, wipe interior dry, leave door open to air out
-- [ ] Deep freeze — mop up all water, wipe interior dry, leave door open to air out
+- [ ] Deep freeze — already outside; wipe interior dry once drained, leave open to air out — movers can load it directly from outside
 - [ ] Both should be completely dry and clean before loading onto the truck Friday
 - [ ] Dishwasher — run one final empty clean cycle, disconnect water inlet and drain hose, tape door shut
 - [ ] Tumble dryer — confirm drum is secured if needed for transport
@@ -128,8 +129,8 @@ Go through every single room one last time with fresh eyes:
 - [ ] Is every box sealed and labelled?
 - [ ] Is every piece of furniture either packed, disassembled, or wrapped?
 - [ ] Are all wall fixtures back in place?
-- [ ] Are all blinds up?
 - [ ] Are all holes filled?
+- [ ] Are blinds and curtains packed in the spare room?
 - [ ] Are there any items missed, forgotten, or still loose?
 - [ ] Check outside: porch, garden, garage — nothing left behind
 
@@ -156,6 +157,7 @@ Go through every single room one last time with fresh eyes:
 - [ ] First Night Box and router bag go in **your car** — point these out to yourself before the truck arrives
 - [ ] PC towers and monitors go in **your car** — do not let movers load these on the truck
 - [ ] Walk movers through the house before they start loading — explain the label system and flag fragile boxes
+- [ ] **Must be fully vacated by 12:00** — aim to have movers done well before noon
 
 ---
 

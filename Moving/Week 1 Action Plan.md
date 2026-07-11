@@ -56,38 +56,41 @@ Week 1 focus: **Arrangements, decisions, and first purge passes**
 ---
 
 ## Weekend (Sat 4 – Sun 5 July)
-> First physical tasks — focus on areas that don't disrupt daily life.
+> Parents visited this weekend — plans adjusted. Strong progress made, well ahead of schedule overall.
 
-### Saturday — Garage + Porch Purge
-- [ ] **Garage purge pass**
-  - Sort boxes: usable for packing vs trash — flatten and remove junk boxes
-  - Identify and set aside items listed for sale (light)
-  - Bag anything for donation or trash
-  - Do a general tidy so the space is workable
-- [ ] **Porch purge pass**
-  - Move porch bed and braai to a visible spot if selling (easier for buyers to view/collect)
-  - Clean chair and table set — assess condition, set aside for packing later
-  - Sort and bin loose dirty items
-  - General clean of the porch area
+### Completed This Weekend
+- [x] **Packing supplies** — fully obtained
+- [x] **Hobby room / study purge** — fully done *(originally Week 2 content)*
+- [x] **Bedroom closet purge** — halfway done *(remainder to finish Week 2)*
+- [x] **All holes filled and painted** *(originally Week 3–4 content)*
+- [x] **Ethernet trunking removed** *(originally Week 2 content)*
+- [x] **Wall ornaments removed**
 
-### Sunday — Supplies + Spare Room Assessment
-- [ ] Collect / buy packing supplies (boxes, tape, bubble wrap, markers, etc.)
-- [ ] **Spare room walkthrough**
-  - Open cupboard, assess contents — start a donation bag for old clothes and unwanted items
-  - Confirm Funkos and book chest are sealed and ready
-  - Locate all blinds stored here — do not pack over them, keep accessible
-- [ ] Begin wall inspection walkthrough — note all holes and missing fixtures room by room
+### Admin Completed This Weekend
+- [x] Notified rental agency of move — coordinating with new tenants on timing
+- [x] Confirmed moving window: **31 July – 1 August**
+- [x] ISP notified — connection transfer arranged *(originally Week 2 carry-over)*
+- [x] Utilities notified of move *(originally Week 2 carry-over)*
+
+### Moved to Week 2 Weekend
+- [ ] **Garage purge** — sort boxes, bag donations/trash, general tidy
+- [ ] **Porch purge** — braai and porch bed to visible spot for buyers, clean chair/table set, bin loose junk
 
 ---
 
 ## End of Week 1 Goals
-By Sunday evening you should have:
-- [ ] Mover decision made (or quotes in hand)
-- [ ] ISP reconnection arranged
-- [ ] Sale listings posted for fans, braai, porch bed, light, soda machine
-- [ ] Packing supplies bought or ordered
-- [ ] Garage and porch purged
-- [ ] Full wall/fixture inspection done with notes
+Actual outcome:
+- [x] ISP reconnection arranged
+- [x] Utilities notified
+- [x] Rental agency notified, moving window confirmed (31 July – 1 August)
+- [x] Packing supplies obtained
+- [x] Study/hobby room purge done *(ahead of schedule)*
+- [x] Bedroom closet purge — halfway done
+- [x] All holes filled and painted *(ahead of schedule)*
+- [x] Trunking and wall ornaments removed *(ahead of schedule)*
+- [ ] Mover decision — still needed (priority for Week 2 weekdays)
+- [ ] Sale listings posted — still needed (fans, braai, porch bed, light, soda machine)
+- [ ] Garage and porch purge — moved to Week 2 weekend
 
 ---
 
