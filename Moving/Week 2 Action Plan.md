@@ -84,25 +84,30 @@ Week 2 focus: **Early disassembly + start packing non-essential areas**
 ### Sunday 12 July
 
 #### Study — Finish
-- [ ] Pack all remaining cables (bundle per device, label clearly)
-- [ ] Photograph cable runs, port assignments on router and switch, ONT connections
-- [ ] Unmount router and switch from table — place on floor or cleared shelf, confirm internet stays up
-- [ ] Label all patch cables per port
-- [ ] Shut down Home Assistant cleanly via UI, disassemble, pack with Zigbee/Z-Wave sticks in a labelled bag: "Home Assistant — handle with care"
-- [ ] Finish any remaining electronics cupboard boxes
+- [x] Pack all remaining cables (bundle per device, label clearly) ✅ 2026-07-12
+- [x] Photograph cable runs, port assignments on router and switch, ONT connections ✅ 2026-07-12
+- [x] Unmount router and switch from table — place on floor or cleared shelf, confirm internet stays up ✅ 2026-07-12
+- [x] Label all patch cables per port ✅ 2026-07-12
+- [x] Shut down Home Assistant cleanly via UI, disassemble, pack with Zigbee/Z-Wave sticks in a labelled bag: "Home Assistant — handle with care" ✅ 2026-07-12
+- [x] Finish any remaining electronics cupboard boxes ✅ 2026-07-12
+- Note: 3D printer and bass guitar in cupboard remain — not needed to pack yet
 
 #### Spare Room — Finish
-- [ ] Pack the remaining bags
-- [ ] Confirm blinds are accessible in the cupboard, do not pack over them
+- [x] Pack the remaining bags ✅ 2026-07-12
+- [x] Confirm blinds are accessible in the cupboard, do not pack over them ✅ 2026-07-12
 
 #### Main Bedroom — Start (Week 3 content moved early)
-- [ ] **His side of closet** — finish purge, pack out-of-season/rarely worn clothes into boxes or bin bags
-- [ ] **Dressing table** — purge each drawer, pack contents into labelled boxes ("Dressing Table — Drawer 1" etc.)
-- [ ] **Side tables** — empty both, wrap, set aside
+- [x] **His side of closet** — finish purge, pack out-of-season/rarely worn clothes into boxes or bin bags ✅ 2026-07-12
+- [x] **Dressing table** — purge each drawer, pack contents into labelled boxes ("Dressing Table — Drawer 1" etc.) ✅ 2026-07-12
+- [x] **Both side tables** — emptied, wrapped, set aside ✅ 2026-07-12
 
 #### Books — Start (Week 3 content moved early)
-- [ ] Pack books into small boxes only — they get very heavy, do not overfill
-- [ ] Label clearly with contents and room
+- [x] All books packed — all fit in trunk, trunk load tested ✅ 2026-07-12
+
+#### Bonus Progress (ahead of Week 3)
+- [x] Started packing figurines and Funkos ✅ 2026-07-12
+- [x] Started board game packing ✅ 2026-07-12
+- [x] One living room shelf completely cleared out ✅ 2026-07-12
 
 #### Garage — Start Boxing (if time allows)
 - [ ] Deep freeze and tumble dryer — stay in place, just ensure area around them is clear
@@ -115,14 +120,14 @@ By Sunday 12 July evening you should have:
 - [x] Garage purged and boxed, appliances clear
 - [x] Braai sold, fans taken care of
 - [ ] Porch purged — porch bed visible for buyer collection
-- [ ] Router/switch unmounted and running on floor
-- [ ] Home Assistant packed and labelled
-- [ ] Study fully packed (cables done)
-- [ ] Spare room fully packed (bags done)
-- [ ] His side of bedroom closet purged, out-of-season clothes packed
-- [ ] Dressing table packed
-- [ ] Side tables emptied and wrapped
-- [ ] Books: first boxes packed
+- [x] Router/switch unmounted and running on floor ✅ 2026-07-12
+- [x] Home Assistant packed and labelled ✅ 2026-07-12
+- [x] Study fully packed (cables done) ✅ 2026-07-12
+- [x] Spare room fully packed (bags done) ✅ 2026-07-12
+- [x] His side of bedroom closet purged, out-of-season clothes packed ✅ 2026-07-12
+- [x] Dressing table packed ✅ 2026-07-12
+- [x] Both side tables emptied and wrapped ✅ 2026-07-12
+- [x] All books packed — trunk tested ✅ 2026-07-12
 - [ ] Porch bed, standing light, soda machine — listed for sale or arrangements made
 
 ---

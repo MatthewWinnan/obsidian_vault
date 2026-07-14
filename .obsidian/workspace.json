@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Home Lab Setup/Weather Station/Pico W Auxiliary Weather Station (BMP180 + BME280 + INA219).md",
+                "file": "Moving/Week 2 Action Plan.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Pico W Auxiliary Weather Station (BMP180 + BME280 + INA219)"
+              "title": "Week 2 Action Plan"
             }
           }
         ]
@@ -177,10 +177,17 @@
   },
   "active": "022a59895e8a8f51",
   "lastOpenFiles": [
+    "Moving/Week 1 Action Plan.md",
+    "Moving/Moving Plan.md",
+    "Moving/4-Week Master Timeline.md",
+    "Moving/Final Push - 30 & 31 July.md",
+    "Moving/Week 4 Action Plan.md",
+    "Moving/Week 3 Action Plan.md",
+    "Moving/Week 2 Action Plan.md",
     "Home Lab Setup/Weather Station/Weather Station Project.md",
+    "Home Lab Setup/Weather Station/Pico W Auxiliary Weather Station (BMP180 + BME280 + INA219).md",
     "Home Lab Setup/Weather Station/Gas Sensor Fun Projects (MQ + Fermion Niche).md",
     "Home Lab Setup/Weather Station/Pico W Air Quality Sensor (PMSA003).md",
-    "Home Lab Setup/Weather Station/Pico W Auxiliary Weather Station (BMP180 + BME280 + INA219).md",
     "Home Lab Setup/Weather Station/Fridge Spoilage Detector (ZMOD4450 + MQ).md",
     "Home Lab Setup/Weather Station/Enclosure Plans.md",
     "Home Lab Setup/Weather Station/Public Data Contribution Plan.md",
@@ -197,13 +204,6 @@
     "TODO.md",
     "index.md",
     "Rust/01 - Getting Started.md",
-    "Rust/11 - Capstone Project.md",
-    "Rust/10 - Modules and Crates.md",
-    "Rust/09 - Concurrency.md",
-    "Rust/02 - Ownership and Borrowing.md",
-    "Rust/08 - Closures and Functional Patterns.md",
-    "Rust/07 - Lifetimes.md",
-    "Rust/06 - Traits.md",
     "Home Lab Setup/Media Server",
     "Home Lab Setup/Remote Access/Proxy Server Setup.md.tmp.23817.1775507802885",
     "Home Lab Setup/Home Assistant",

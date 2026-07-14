@@ -8,14 +8,14 @@ House: 3 bedroom, 2 bathroom
 ## Timeline Overview
 
 ### Week 1 — 4 Weeks Out (1 July → 6 July)
-- [ ] Confirm when current occupants vacate new place
-- [ ] Decide: hire movers vs self-move (get 2–3 quotes if hiring)
-- [ ] Set moving budget
-- [ ] Collect packing supplies — boxes, tape, bubble wrap, markers, labels, furniture pads
+- [x] Confirm when current occupants vacate new place ✅ 2026-07-11
+- [x] Decide: hire movers vs self-move (get 2–3 quotes if hiring) ✅ 2026-07-11
+- [x] Set moving budget ✅ 2026-07-11
+- [x] Collect packing supplies — boxes, tape, bubble wrap, markers, labels, furniture pads ✅ 2026-07-11
   - Estimate: 80–100 boxes for a 3-bed house
-- [ ] Start a "purge pass" — go room by room and decide: keep / donate / sell / trash
-- [ ] List large items that need special handling (TVs, appliances, furniture)
-- [ ] Notify: employer, bank, insurance, subscriptions, Home Affairs / post office (address change)
+- [x] Start a "purge pass" — go room by room and decide: keep / donate / sell / trash ✅ 2026-07-11
+- [x] List large items that need special handling (TVs, appliances, furniture) ✅ 2026-07-11
+- [x] Notify: employer, bank, insurance, subscriptions, Home Affairs / post office (address change) ✅ 2026-07-11
 - See [[Moving/Week 1 Action Plan|Week 1 Action Plan]] for full detail
 
 ### Week 2 — 3 Weeks Out (7 July → 13 July)
@@ -132,7 +132,7 @@ House: 3 bedroom, 2 bathroom
 
 **Other items (all coming with us):**
 - [ ] Plushies — pack in large bags or boxes, lightweight so good for filling space in bigger boxes
-- [ ] Old monitor — wrap screen in bubble wrap or blanket, pack upright, label FRAGILE
+- [x] Old monitor — donated ✅
 - [ ] Funkos — already boxed, just confirm boxes are sealed and labelled, stack carefully
 - [ ] Chest with packed books — heavy, confirm chest can be moved as-is or transfer books to smaller boxes for transport
 - [ ] Loose shelf — disassemble if possible, wrap shelving boards together, bag any brackets/screws
