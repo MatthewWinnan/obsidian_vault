@@ -1,14 +1,14 @@
-# Final Push — Thursday 30 & Friday 31 July
+# Final Push — Wednesday 29 & Thursday 30 July
 
-Moving date: **Saturday 1 August 2026** — handover same day
-These are your two days off. The goal is to arrive at Saturday morning calm, organised, and ready.
+Moving date: **Friday 31 July 2026** | Inspection: **Saturday 1 August 2026**
+These are your two days off. The goal is to arrive at Friday morning calm, organised, and ready to move out.
 
-> By the end of Thursday everything should be packed.
-> Friday is for closing out, defrosting, and preparing for the day itself.
+> By the end of Wednesday everything should be packed and all holes filled.
+> Thursday is for touch-up painting, defrosting, and preparing for move-out day.
 
 ---
 
-## Thursday 30 July — Pack Everything Remaining
+## Wednesday 29 July — Pack Everything Remaining + Fill All Holes
 
 ### Morning
 
@@ -59,11 +59,12 @@ Go room by room and check every single space:
 - [ ] Garage shelves and corners
 - [ ] Porch — anything still loose outside
 
-#### House Restoration — Final Check
-- [ ] Walk every wall in every room — check all holes are filled and sanded
+#### House Restoration — Fill All Remaining Holes
+- [ ] Walk every wall in every room — fill ALL remaining holes with polyfilla
+- [ ] Check behind where furniture was — often hidden holes or marks
+- [ ] Leave filler to dry overnight — painting happens tomorrow (Thursday)
 - [ ] All blinds re-hung in correct rooms — pull each one up and down to confirm working
 - [ ] All fixtures reattached — hooks, rails, towel bars, toilet roll holders, brackets
-- [ ] Touch up any paint that still looks uneven — give it the rest of the day to dry
 
 #### Cat Setup
 - [ ] Choose the safe room for moving day (e.g. bathroom or spare room)
@@ -77,17 +78,25 @@ Go room by room and check every single space:
 - [ ] Charge all devices overnight — phones, laptops, power banks
 - [ ] Eat down whatever is left in the fridge for dinner — clear it as much as possible
 - [ ] **Unplug the fridge and deep freeze tonight** — doors open, towels on the floor to catch water — they need the full night to defrost
+- [ ] Filler should be dry by now — confirm all patches are hard and ready for sanding/painting tomorrow
 
 ---
 
-## Friday 31 July — Close Out, Defrost, Final Prep
+## Thursday 30 July — Touch-Up Painting, Defrost, Final Prep
 
 ### Morning
+
+#### Touch-Up Painting — All Rooms
+- [ ] Sand all dried filler patches smooth (fine grit sandpaper, 120–180)
+- [ ] Wipe dust off sanded areas with a damp cloth, let dry
+- [ ] Touch up all filled areas with matching paint — use a small roller or brush
+- [ ] Work room by room systematically — don't miss any patches
+- [ ] Paint dries through the day and overnight — will be ready for inspection Saturday
 
 #### Defrost + Clean Appliances
 - [ ] Fridge — mop up all water, wipe interior dry, leave door open to air out
 - [ ] Deep freeze — mop up all water, wipe interior dry, leave door open to air out
-- [ ] Both should be completely dry and clean before loading onto the truck Saturday
+- [ ] Both should be completely dry and clean before loading onto the truck Friday
 - [ ] Dishwasher — run one final empty clean cycle, disconnect water inlet and drain hose, tape door shut
 - [ ] Tumble dryer — confirm drum is secured if needed for transport
 
@@ -136,12 +145,12 @@ Go through every single room one last time with fresh eyes:
 ### Afternoon / Evening
 
 #### Last Night
-- [ ] Sleep on the stripped-down bed with the bedding set aside from Thursday
+- [ ] Sleep on the stripped-down bed with the bedding set aside from Wednesday
 - [ ] Keep cat in normal routine — don't put them in the safe room until tomorrow morning
 - [ ] Do not unplug the fridge or freezer tonight — they're already off, just leave doors open to dry
 - [ ] Set an early alarm — movers arriving early means an early start
 
-#### Final Reminders for Tomorrow Morning
+#### Final Reminders for Tomorrow Morning (Friday 31 — Move Out Day)
 - [ ] Cat into safe room first thing, before movers arrive — food, water, litter, door shut, note on door
 - [ ] Do not feed cat 2–3 hours before the car journey
 - [ ] First Night Box and router bag go in **your car** — point these out to yourself before the truck arrives
@@ -150,7 +159,7 @@ Go through every single room one last time with fresh eyes:
 
 ---
 
-## You're Ready. Moving Day Checklist → [[Moving/Moving Plan|Moving Plan — Moving Day Section]]
+## You're Ready. Move Out → Friday 31 July | Inspection → Saturday 1 August
 
 ---
 

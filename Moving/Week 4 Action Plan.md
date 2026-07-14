@@ -1,9 +1,9 @@
 # Week 4 Action Plan (21–27 July)
 
-Moving date: **Saturday 1 August 2026** (handover same day)
+Moving date: **Friday 31 July 2026** | Inspection: **Saturday 1 August 2026**
 Week 4 focus: **Final packing — kitchen, main bedroom, furniture disassembly, and house restoration**
 
-> After this weekend, the house should be almost entirely packed. Only daily-use essentials remain for the final push days (Thu 30 – Fri 31).
+> After this weekend, the house should be almost entirely packed. Only daily-use essentials remain for the final push days (Wed 29 – Thu 30).
 
 ---
 
@@ -14,7 +14,7 @@ Week 4 focus: **Final packing — kitchen, main bedroom, furniture disassembly, 
 - [ ] Stop buying anything that won't be consumed before 31 July
 - [ ] Actively plan every meal around what's left — fridge and freezer should be nearly empty by end of this week
 - [ ] Donate or give away anything you won't get through — neighbours, friends, food bank
-- [ ] Fridge and deep freeze need to be empty and defrosting by Thursday 30 July night
+- [ ] Fridge and deep freeze need to be empty and defrosting by Wednesday 29 July night
 
 ### Movers — Final Reconfirmation
 - [ ] Call or message movers to reconfirm: arrival time on 1 August, both addresses, truck size, number of people
@@ -23,8 +23,8 @@ Week 4 focus: **Final packing — kitchen, main bedroom, furniture disassembly, 
 
 ### House Restoration — Evenings This Week
 - [ ] Continue filling holes in any rooms not done last weekend (main bedroom, gaming area, kitchen, bathrooms)
-- [ ] Sand down dried filler from last weekend — check if touch-up paint is needed
-- [ ] Touch up paint wherever needed — do early in the week so it has time to fully dry before handover
+- [ ] Sand down dried filler from last weekend — check if any spots need a second coat of filler
+- [ ] Do NOT paint yet — all touch-up painting will be done on days off (Thu 30 July) once all filling is complete
 - [ ] Retrieve blinds from spare room cupboard — make a list of which blind goes in which room
 
 ### Supplies Check
@@ -86,7 +86,7 @@ Week 4 focus: **Final packing — kitchen, main bedroom, furniture disassembly, 
 
 #### Porch
 - [ ] Wrap chair and table set — cling wrap or moving blankets, stack chairs if possible
-- [ ] Confirm braai and porch bed are gone — if not, arrange final collection or skip hire this week
+- [x] Confirm braai and porch bed are gone
 
 #### Bathrooms — Light Pack
 - [ ] Begin clearing bathroom cabinets — discard expired products, old medicines, anything not worth moving
@@ -111,7 +111,7 @@ By Sunday evening you should have:
 ---
 
 ## What's Left After This Weekend
-Only these items remain for the final push (Thu 30 – Fri 31 July):
+Only these items remain for the final push (Wed 29 – Thu 30 July):
 - PCs (still running until last moment)
 - 4–5 days of daily clothes + shoes
 - Kitchen "last morning kit"
@@ -119,6 +119,8 @@ Only these items remain for the final push (Thu 30 – Fri 31 July):
 - Cat safe room setup
 - First Night Box packing
 - Fridge and deep freeze defrost
+- **All touch-up painting** (fill Wed → paint Thu)
+- Curtains: confirm ChemDry done and replacement curtain installed
 
 ---
 

@@ -1,6 +1,6 @@
 # Moving Plan
 
-Moving date: **Saturday 1 August 2026** (handover same day)
+Moving date: **Friday 31 July 2026** | Inspection: **Saturday 1 August 2026**
 House: 3 bedroom, 2 bathroom
 
 ---
@@ -22,8 +22,8 @@ House: 3 bedroom, 2 bathroom
 - [ ] Begin packing non-essential / rarely used rooms first (see room order below)
 - [ ] Sort and label all boxes: **Room | Contents | Fragile?**
 - [ ] Take photos of all cable setups (TV, PC, home lab, etc.) before disassembly
-- [ ] Arrange utility connections at new place (internet, electricity)
-- [ ] Arrange utility disconnections / transfer at current place
+- [x] Arrange utility connections at new place (internet — new ISP ordered, electricity)
+- [x] Arrange utility disconnections / transfer at current place (ISP cancellation sent — contract expires 1 September, return old router after move)
 
 ### Week 3 — 2 Weeks Out (14 July → 20 July)
 - [ ] Pack secondary bedrooms
@@ -40,16 +40,20 @@ House: 3 bedroom, 2 bathroom
 - [ ] Re-hang all blinds and replace all removed fixtures
 - [ ] Fill all holes, sand and touch up paint
 
-### Final Push (Thu 30 – Fri 31 July) — Take These Days Off
-- [ ] Thursday 30: final packing, wall touch-ups, blinds and fixtures done
-- [ ] Friday 31: defrost fridge and deep freeze, final walkthrough, pack First Night Box, confirm movers
+### Final Push (Wed 29 – Thu 30 July) — Days Off
+- [ ] Wednesday 29: fill all remaining holes, final packing, blinds and fixtures done
+- [ ] Thursday 30: touch-up painting (filler dry from Wed), defrost fridge and deep freeze, final walkthrough, pack First Night Box, confirm movers
 
-### Moving Day — Saturday 1 August
-- [ ] Walk movers through the house and label system
-- [ ] Keep First Night Box with you (not on the truck)
-- [ ] Cat in safe room until everything is loaded
-- [ ] Do final walkthrough before handing over keys — check every room, cupboard, outside
+### Move Out — Friday 31 July
+- [ ] Move all belongings out
+- [ ] Deep clean the house
 - [ ] Hand over keys
+
+### Inspection — Saturday 1 August
+- [ ] Walk inspector through the house
+- [ ] All walls filled and painted
+- [ ] All blinds re-hung, all fixtures reattached
+- [ ] Curtains cleaned (ChemDry) and broken curtain replaced
 
 ---
 
@@ -98,7 +102,7 @@ House: 3 bedroom, 2 bathroom
 - [ ] Dressing table — empty all drawers first, wrap mirror if attached, bag hardware if disassembling legs
 
 **Sell / replace:**
-- [ ] Three fans — sell or donate all three, buy one new fan at new place instead
+- [x] Three fans — ~~sell or donate all three, buy one new fan at new place instead~~ Done
 
 **Fixed cupboards (staying, empty out):**
 - [ ] Do a clothing purge pass — old/unwanted clothes into donation bags before packing
@@ -145,7 +149,7 @@ House: 3 bedroom, 2 bathroom
 - [ ] Remove ethernet trunking from walls around the house early — can live with exposed cables for a few weeks, no rush to tidy
 - [ ] Photograph all cable runs and port assignments before touching anything
 - [ ] Router, switch, ONT, and all patch cables — pack together in a clearly labelled bag/box on moving day, transport in your car not the truck
-- [ ] Arrange ISP reconnection at new address before or on moving day
+- [x] Arrange ISP reconnection at new address — new system ordered
 
 **Home Assistant — Disassemble Early (Week 2)**
 - [ ] Home Assistant setup can come down early — stability testing will restart fresh at the new place
@@ -278,8 +282,8 @@ House: 3 bedroom, 2 bathroom
 - [ ] Chair and table set — clean before packing, wrap/stack for transport
 
 **Sell / give away:**
-- [ ] Porch bed — list for sale or give away early (bulky, don't want it sitting around)
-- [ ] Braai — sell or give away, not coming with us
+- [x] Porch bed — ~~list for sale or give away early (bulky, don't want it sitting around)~~ Done
+- [x] Braai — ~~sell or give away, not coming with us~~ Done
 
 **General:**
 - [ ] Sort through loose items — clean what's worth keeping, trash the rest
@@ -373,9 +377,10 @@ Pack a clearly labelled box / bag that rides with you, not the truck:
 
 **Yes — strongly recommended.** Here's a suggested approach:
 
-- **Thursday 30 July** — Take off: final packing push, touch up walls/holes, re-hang blinds and fixtures
-- **Friday 31 July** — Take off: defrost fridge and deep freeze, clean both, final walkthrough of every room, pack First Night Box, confirm movers
-- **Saturday 1 August** — Moving day and handover
+- **Wednesday 29 July** — Day off: fill all remaining holes, final packing push, re-hang blinds and fixtures
+- **Thursday 30 July** — Day off: touch-up painting (filler dry overnight), defrost fridge and deep freeze, final walkthrough of every room, pack First Night Box, confirm movers
+- **Friday 31 July** — Move out day
+- **Saturday 1 August** — Inspection day
 
 This gives you Thu–Fri to close everything out calmly before the Saturday move. Trying to finish on weekends only and scrambling on the day is the most common source of moving stress.
 
@@ -386,6 +391,12 @@ This gives you Thu–Fri to close everything out calmly before the Saturday move
 ## House Handover / Restoration
 
 > These need to be done before handing back keys — ideally in the final week, not on moving day itself.
+
+**Curtains**
+- [ ] Call ChemDry (Tel: 012 663 8531 / 082 372 4999) to schedule cleaning — must be done and dry before inspection
+- [ ] Broken curtain — get custom replacement made (fiancée knows the store)
+- [ ] Confirm measurements and order ASAP — custom work has lead time
+- [ ] Install replacement curtain before inspection day (1 August)
 
 **Blinds**
 - [ ] Retrieve blinds from spare bedroom storage

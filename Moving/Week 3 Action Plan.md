@@ -9,9 +9,19 @@ Week 3 focus: **Main packing push — living areas, gaming, remaining study, and
 > Admin, sales follow-up, and intentional food management.
 
 ### Sales — Final Push
-- [ ] Chase all outstanding sale items — fans ×3, braai, porch bed, standing light, soda machine
+- [ ] Chase all outstanding sale items — standing light, soda machine
 - [ ] Any items still unsold: drop price significantly or list as free — getting rid of them now is worth more than the money
 - [ ] Arrange final collection times this week so items are gone before the weekend
+
+### Curtains — Urgent
+- [ ] Call ChemDry to schedule curtain cleaning (Tel: 012 663 8531 / 082 372 4999) — needs to be done and dry well before inspection on 1 August
+- [ ] Follow up with fiancée on the store for custom curtain replacement (broken curtain) — get measurements, fabric, and order ASAP as custom work has lead time
+- [ ] Confirm with store what turnaround time is — must be installed before inspection (Saturday 1 August)
+
+### Misc
+- [ ] Ask parents if they still have the old single bed from college — found old single bed bedding in the cupboard
+  - If yes: give them the bedding
+  - If no one has the bed: donate the bedding
 
 ### Food / Fridge / Freezer
 - [ ] Actively plan meals around what's in the fridge and freezer — stop buying items you already have
@@ -19,7 +29,8 @@ Week 3 focus: **Main packing push — living areas, gaming, remaining study, and
 - [ ] Defrost any large frozen items to use up this week
 
 ### Movers
-- [ ] Reconfirm moving day details — time, both addresses, number of movers, truck size
+- [x] Reconfirm moving day details — time, both addresses, number of movers, truck size
+- [ ] Ask movers if they can box/wrap the TVs for us
 - [ ] Flag large/heavy items to movers: king bed, deep freeze, tumble dryer, dishwasher, fridge, couch set, desks
 
 ### Address Change Notifications
@@ -27,9 +38,22 @@ Week 3 focus: **Main packing push — living areas, gaming, remaining study, and
 - [ ] Subscriptions, streaming services, online shopping accounts — update delivery address
 - [ ] Post office redirect — confirm this is active
 
+### ISP
+- [x] Cancellation request sent to current ISP (contract expires 1 September)
+- [x] New ISP system ordered for new address
+- [ ] Return old router to current ISP after move (no rush — contract runs until 1 September)
+
 ### Packing Supplies Check
 - [ ] Assess remaining box stock — do you have enough for kitchen, bedrooms, and living room? Top up if needed
 - [ ] Confirm you have enough bubble wrap and packing paper for crockery and fragile items next week
+
+### Paint + Repair Supplies — Buy This or Next Weekend
+- [ ] Get touch-up paint (match existing wall colour — take a chip or photo to the store)
+- [ ] Polyfilla / wall filler (if running low)
+- [ ] Sandpaper (fine grit, 120–180)
+- [ ] Small paint roller or brush for touch-ups
+- [ ] Painter's tape (if needed for edges)
+- [ ] These supplies are for the final fill + paint on days off (Wed 29 & Thu 30 July)
 
 ---
 
@@ -78,6 +102,7 @@ Week 3 focus: **Main packing push — living areas, gaming, remaining study, and
 - [ ] Priority rooms this weekend: spare room, study, living room (once packed)
 - [ ] Apply filler, let dry overnight, sand smooth Monday morning before work if needed
 - [ ] Keep a note of which rooms still need doing
+- [ ] Do NOT paint yet — all painting deferred to day off Thursday 30 July (one big pass after all filling is complete)
 
 ---
 
